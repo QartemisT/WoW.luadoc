@@ -194,14 +194,14 @@ function C_ClubFinder.SetRecruitmentSettings(index, checked) end
 ---@return bool shouldShow
 function C_ClubFinder.ShouldShowClubFinder() end
 
-Enums.ClubFinderApplicationUpdateType = {
+Enum.ClubFinderApplicationUpdateType = {
 	["None"] = 0
 	["AcceptInvite"] = 1
 	["DeclineInvite"] = 2
 	["Cancel"] = 3
 }
 
-Enums.ClubFinderClubPostingStatusFlags = {
+Enum.ClubFinderClubPostingStatusFlags = {
 	["None"] = 0
 	["NeedsCacheUpdate"] = 1
 	["ForceDescriptionChange"] = 2
@@ -213,13 +213,13 @@ Enums.ClubFinderClubPostingStatusFlags = {
 	["PostDelisted"] = 8
 }
 
-Enums.ClubFinderDisableReason = {
+Enum.ClubFinderDisableReason = {
 	["Muted"] = 0
 	["Silenced"] = 1
 	["VeteranTrial"] = 2
 }
 
-Enums.ClubFinderPostingReportType = {
+Enum.ClubFinderPostingReportType = {
 	["PostersName"] = 0
 	["ClubName"] = 1
 	["PostingDescription"] = 2
@@ -227,14 +227,14 @@ Enums.ClubFinderPostingReportType = {
 	["JoinNote"] = 4
 }
 
-Enums.ClubFinderRequestType = {
+Enum.ClubFinderRequestType = {
 	["None"] = 0
 	["Guild"] = 1
 	["Community"] = 2
 	["All"] = 3
 }
 
-Enums.ClubFinderSettingFlags = {
+Enum.ClubFinderSettingFlags = {
 	["None"] = 0
 	["Dungeons"] = 1
 	["Raids"] = 2
@@ -263,7 +263,7 @@ Enums.ClubFinderSettingFlags = {
 	["LanguageReserved5"] = 25
 }
 
-Enums.PlayerClubRequestStatus = {
+Enum.PlayerClubRequestStatus = {
 	["None"] = 0
 	["Pending"] = 1
 	["AutoApproved"] = 2

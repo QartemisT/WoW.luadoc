@@ -1,7 +1,7 @@
 ---@class WowEntitlementInfo
 C_WowEntitlementInfo = {}
 
-Enums.WoWEntitlementType = {
+Enum.WoWEntitlementType = {
 	["Item"] = 0
 	["Mount"] = 1
 	["Battlepet"] = 2

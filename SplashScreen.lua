@@ -9,7 +9,7 @@ function C_SplashScreen.CanViewSplashScreen() end
 ---@param fromGameMenu bool 
 function C_SplashScreen.RequestLatestSplashScreen(fromGameMenu) end
 
-Enums.SplashScreenType = {
+Enum.SplashScreenType = {
 	["WhatsNew"] = 0
 	["SeasonRollOver"] = 1
 }

@@ -40,7 +40,7 @@ function C_CampaignInfo.IsCampaignQuest(questID) end
 ---@return bool useNormalQuestIcons
 function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 
-Enums.CampaignState = {
+Enum.CampaignState = {
 	["Invalid"] = 0
 	["Complete"] = 1
 	["InProgress"] = 2

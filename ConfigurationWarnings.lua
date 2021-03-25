@@ -16,7 +16,7 @@ function C_ConfigurationWarnings.GetConfigurationWarnings(includeSeenWarnings) e
 ---@param configurationWarning ConfigurationWarning 
 function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarning) end
 
-Enums.ConfigurationWarning = {
+Enum.ConfigurationWarning = {
 	["ShaderModelWillBeOutdated"] = 0
 	["ShaderModelIsOutdated"] = 1
 	["ConsoleDeviceSseOutdated"] = 2

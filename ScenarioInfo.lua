@@ -5,7 +5,7 @@ C_ScenarioInfo = {}
 ---@return string|nil typeString
 function C_ScenarioInfo.GetJailersTowerTypeString(runType) end
 
-Enums.JailersTowerType = {
+Enum.JailersTowerType = {
 	["TwistingCorridors"] = 0
 	["SkoldusHalls"] = 1
 	["FractureChambers"] = 2

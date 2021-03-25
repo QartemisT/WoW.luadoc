@@ -234,17 +234,17 @@ function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 
 function C_VoiceChat.ToggleMuted() end
 
-Enums.CommunicationMode = {
+Enum.CommunicationMode = {
 	["PushToTalk"] = 0
 	["OpenMic"] = 1
 }
 
-Enums.VoiceChannelErrorReason = {
+Enum.VoiceChannelErrorReason = {
 	["Unknown"] = 0
 	["IsBattleNetChannel"] = 1
 }
 
-Enums.VoiceChatStatusCode = {
+Enum.VoiceChatStatusCode = {
 	["Success"] = 0
 	["OperationPending"] = 1
 	["TooManyRequests"] = 2

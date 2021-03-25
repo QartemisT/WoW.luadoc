@@ -21,7 +21,7 @@ function C_QuestLine.IsComplete(questLineID) end
 ---@param uiMapID number 
 function C_QuestLine.RequestQuestLinesForMap(uiMapID) end
 
-Enums.QuestLineFloorLocation = {
+Enum.QuestLineFloorLocation = {
 	["Above"] = 0
 	["Below"] = 1
 	["Same"] = 2

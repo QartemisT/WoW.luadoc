@@ -153,7 +153,7 @@ function C_Map.RequestPreloadMap(uiMapID) end
 ---@param point table 
 function C_Map.SetUserWaypoint(point) end
 
-Enums.MapCanvasPosition = {
+Enum.MapCanvasPosition = {
 	["None"] = 0
 	["BottomLeft"] = 1
 	["BottomRight"] = 2
@@ -161,7 +161,7 @@ Enums.MapCanvasPosition = {
 	["TopRight"] = 4
 }
 
-Enums.UIMapFlag = {
+Enum.UIMapFlag = {
 	["NoHighlight"] = 1
 	["ShowOverlays"] = 2
 	["ShowTaxiNodes"] = 4
@@ -181,14 +181,14 @@ Enums.UIMapFlag = {
 	["AlwaysAllowUserWaypoints"] = 65536
 }
 
-Enums.UIMapSystem = {
+Enum.UIMapSystem = {
 	["World"] = 0
 	["Taxi"] = 1
 	["Adventure"] = 2
 	["Minimap"] = 3
 }
 
-Enums.UIMapType = {
+Enum.UIMapType = {
 	["Cosmic"] = 0
 	["World"] = 1
 	["Continent"] = 2

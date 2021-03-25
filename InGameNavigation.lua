@@ -16,7 +16,7 @@ function C_Navigation.HasValidScreenPosition() end
 ---@return bool wasClamped
 function C_Navigation.WasClampedToScreen() end
 
-Enums.NavigationState = {
+Enum.NavigationState = {
 	["Invalid"] = 0
 	["Occluded"] = 1
 	["InRange"] = 2

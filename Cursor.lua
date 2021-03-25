@@ -13,7 +13,7 @@ function C_Cursor.GetCursorItem() end
 ---@param streamId string 
 function C_Cursor.SetCursorCommunitiesStream(clubId, streamId) end
 
-Enums.UICursorType = {
+Enum.UICursorType = {
 	["Default"] = 0
 	["Item"] = 1
 	["Money"] = 2

@@ -27,7 +27,7 @@ function C_PetJournal.PetIsSummonable(battlePetGUID) end
 ---@return bool|nil usesRandomDisplay
 function C_PetJournal.PetUsesRandomDisplay(speciesID) end
 
-Enums.PetJournalError = {
+Enum.PetJournalError = {
 	["None"] = 0
 	["PetIsDead"] = 1
 	["JournalIsLocked"] = 2

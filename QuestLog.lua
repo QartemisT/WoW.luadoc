@@ -297,7 +297,7 @@ function C_QuestLog.ShouldShowQuestRewards(questID) end
 
 function C_QuestLog.SortQuestWatches() end
 
-Enums.MapOverlayDisplayLocation = {
+Enum.MapOverlayDisplayLocation = {
 	["Default"] = 0
 	["BottomLeft"] = 1
 	["TopLeft"] = 2
@@ -306,13 +306,13 @@ Enums.MapOverlayDisplayLocation = {
 	["Hidden"] = 5
 }
 
-Enums.QuestFrequency = {
+Enum.QuestFrequency = {
 	["Default"] = 0
 	["Daily"] = 1
 	["Weekly"] = 2
 }
 
-Enums.QuestTag = {
+Enum.QuestTag = {
 	["Group"] = 1
 	["PvP"] = 41
 	["Raid"] = 62
@@ -326,12 +326,12 @@ Enums.QuestTag = {
 	["CombatAlly"] = 266
 }
 
-Enums.QuestWatchType = {
+Enum.QuestWatchType = {
 	["Automatic"] = 0
 	["Manual"] = 1
 }
 
-Enums.WorldQuestQuality = {
+Enum.WorldQuestQuality = {
 	["Common"] = 0
 	["Rare"] = 1
 	["Epic"] = 2

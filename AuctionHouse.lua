@@ -301,18 +301,18 @@ function C_AuctionHouse.SetFavoriteItem(itemKey, setFavorite) end
 ---@param quantity number 
 function C_AuctionHouse.StartCommoditiesPurchase(itemID, quantity) end
 
-Enums.AuctionHouseFilterCategory = {
+Enum.AuctionHouseFilterCategory = {
 	["Uncategorized"] = 0
 	["Equipment"] = 1
 	["Rarity"] = 2
 }
 
-Enums.AuctionStatus = {
+Enum.AuctionStatus = {
 	["Active"] = 0
 	["Sold"] = 1
 }
 
-Enums.ItemCommodityStatus = {
+Enum.ItemCommodityStatus = {
 	["Unknown"] = 0
 	["Item"] = 1
 	["Commodity"] = 2

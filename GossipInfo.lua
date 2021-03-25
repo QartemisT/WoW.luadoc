@@ -54,12 +54,12 @@ function C_GossipInfo.SelectAvailableQuest(index) end
 ---@overload fun(index:number)
 function C_GossipInfo.SelectOption(index, text, confirmed) end
 
-Enums.GossipOptionRewardType = {
+Enum.GossipOptionRewardType = {
 	["Item"] = 0
 	["Currency"] = 1
 }
 
-Enums.GossipOptionStatus = {
+Enum.GossipOptionStatus = {
 	["Available"] = 0
 	["Unavailable"] = 1
 	["Locked"] = 2

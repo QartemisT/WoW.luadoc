@@ -40,7 +40,7 @@ function C_Transmog.GetSlotVisualInfo(transmogLocation) end
 ---@overload fun(transmogLocation:table, transmogID:number)
 function C_Transmog.SetPending(transmogLocation, transmogID, categoryID) end
 
-Enums.TransmogCollectionType = {
+Enum.TransmogCollectionType = {
 	["Head"] = 0
 	["Shoulder"] = 1
 	["Back"] = 2
@@ -72,12 +72,12 @@ Enums.TransmogCollectionType = {
 	["Paired"] = 28
 }
 
-Enums.TransmogModification = {
+Enum.TransmogModification = {
 	["None"] = 0
 	["RightShoulder"] = 1
 }
 
-Enums.TransmogSource = {
+Enum.TransmogSource = {
 	["None"] = 0
 	["JournalEncounter"] = 1
 	["Quest"] = 2
@@ -90,7 +90,7 @@ Enums.TransmogSource = {
 	["NotValidForTransmog"] = 9
 }
 
-Enums.TransmogType = {
+Enum.TransmogType = {
 	["Appearance"] = 0
 	["Illusion"] = 1
 }

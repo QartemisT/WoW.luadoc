@@ -115,47 +115,47 @@ function C_UIWidgetManager.SetProcessingUnit(unit) end
 ---@param unitToken string 
 function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken) end
 
-Enums.CaptureBarWidgetFillDirectionType = {
+Enum.CaptureBarWidgetFillDirectionType = {
 	["RightToLeft"] = 0
 	["LeftToRight"] = 1
 }
 
-Enums.CaptureBarWidgetGlowAnimType = {
+Enum.CaptureBarWidgetGlowAnimType = {
 	["None"] = 0
 	["Pulse"] = 1
 }
 
-Enums.IconAndTextWidgetState = {
+Enum.IconAndTextWidgetState = {
 	["Hidden"] = 0
 	["Shown"] = 1
 	["ShownWithDynamicIconFlashing"] = 2
 	["ShownWithDynamicIconNotFlashing"] = 3
 }
 
-Enums.IconState = {
+Enum.IconState = {
 	["Hidden"] = 0
 	["ShowState1"] = 1
 	["ShowState2"] = 2
 }
 
-Enums.SpellDisplayIconDisplayType = {
+Enum.SpellDisplayIconDisplayType = {
 	["Buff"] = 0
 	["Debuff"] = 1
 	["Circular"] = 2
 }
 
-Enums.SpellDisplayIconSizeType = {
+Enum.SpellDisplayIconSizeType = {
 	["Small"] = 0
 	["Medium"] = 1
 	["Large"] = 2
 }
 
-Enums.SpellDisplayTextShownStateType = {
+Enum.SpellDisplayTextShownStateType = {
 	["Shown"] = 0
 	["Hidden"] = 1
 }
 
-Enums.StatusBarColorTintValue = {
+Enum.StatusBarColorTintValue = {
 	["None"] = 0
 	["Black"] = 1
 	["White"] = 2
@@ -167,14 +167,14 @@ Enums.StatusBarColorTintValue = {
 	["Blue"] = 8
 }
 
-Enums.StatusBarOverrideBarTextShownType = {
+Enum.StatusBarOverrideBarTextShownType = {
 	["Never"] = 0
 	["Always"] = 1
 	["OnlyOnMouseover"] = 2
 	["OnlyNotOnMouseover"] = 3
 }
 
-Enums.StatusBarValueTextType = {
+Enum.StatusBarValueTextType = {
 	["Hidden"] = 0
 	["Percentage"] = 1
 	["Value"] = 2
@@ -184,77 +184,77 @@ Enums.StatusBarValueTextType = {
 	["ValueOverMaxNormalized"] = 6
 }
 
-Enums.UIWidgetFlag = {
+Enum.UIWidgetFlag = {
 	["UniversalWidget"] = 1
 }
 
-Enums.UIWidgetFontType = {
+Enum.UIWidgetFontType = {
 	["Normal"] = 0
 	["Shadow"] = 1
 	["Outline"] = 2
 }
 
-Enums.UIWidgetTextSizeType = {
+Enum.UIWidgetTextSizeType = {
 	["Small"] = 0
 	["Medium"] = 1
 	["Large"] = 2
 	["Huge"] = 3
 }
 
-Enums.WidgetAnimationType = {
+Enum.WidgetAnimationType = {
 	["None"] = 0
 	["Fade"] = 1
 }
 
-Enums.WidgetCurrencyClass = {
+Enum.WidgetCurrencyClass = {
 	["Currency"] = 0
 	["Item"] = 1
 }
 
-Enums.WidgetEnabledState = {
+Enum.WidgetEnabledState = {
 	["Disabled"] = 0
 	["Enabled"] = 1
 	["Red"] = 2
 	["Highlight"] = 3
 }
 
-Enums.WidgetShownState = {
+Enum.WidgetShownState = {
 	["Hidden"] = 0
 	["Shown"] = 1
 }
 
-Enums.ZoneControlActiveState = {
+Enum.ZoneControlActiveState = {
 	["Inactive"] = 0
 	["Active"] = 1
 }
 
-Enums.ZoneControlDangerFlashType = {
+Enum.ZoneControlDangerFlashType = {
 	["ShowOnGoodStates"] = 0
 	["ShowOnBadStates"] = 1
 	["ShowOnBoth"] = 2
 	["ShowOnNeither"] = 3
 }
 
-Enums.ZoneControlFillType = {
+Enum.ZoneControlFillType = {
 	["SingleFillClockwise"] = 0
 	["SingleFillCounterClockwise"] = 1
 	["DoubleFillClockwise"] = 2
 	["DoubleFillCounterClockwise"] = 3
 }
 
-Enums.ZoneControlLeadingEdgeType = {
+Enum.ZoneControlLeadingEdgeType = {
 	["NoLeadingEdge"] = 0
 	["UseLeadingEdge"] = 1
 }
 
-Enums.ZoneControlMode = {
+Enum.ZoneControlMode = {
 	["BothStatesAreGood"] = 0
 	["State1IsGood"] = 1
 	["State2IsGood"] = 2
 	["NeitherStateIsGood"] = 3
 }
 
-Enums.ZoneControlState = {
+Enum.ZoneControlState = {
 	["State1"] = 0
 	["State2"] = 1
 }

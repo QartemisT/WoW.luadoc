@@ -482,7 +482,7 @@ function C_Commentator.ZoomIn() end
 
 function C_Commentator.ZoomOut() end
 
-Enums.TrackedSpellCategory = {
+Enum.TrackedSpellCategory = {
 	["Offensive"] = 0
 	["Defensive"] = 1
 	["Debuff"] = 2

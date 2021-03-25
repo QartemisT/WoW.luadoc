@@ -20,7 +20,7 @@ function C_DeathInfo.GetSelfResurrectOptions() end
 ---@param id number 
 function C_DeathInfo.UseSelfResurrectOption(optionType, id) end
 
-Enums.SelfResurrectOptionType = {
+Enum.SelfResurrectOptionType = {
 	["Spell"] = 0
 	["Item"] = 1
 }

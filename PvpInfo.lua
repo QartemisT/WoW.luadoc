@@ -219,14 +219,14 @@ function C_PvP.SetWarModeDesired(warModeDesired) end
 
 function C_PvP.ToggleWarMode() end
 
-Enums.BrawlType = {
+Enum.BrawlType = {
 	["None"] = 0
 	["Battleground"] = 1
 	["Arena"] = 2
 	["Lfg"] = 3
 }
 
-Enums.PvPMatchState = {
+Enum.PvPMatchState = {
 	["Inactive"] = 0
 	["Active"] = 1
 	["Complete"] = 2

@@ -35,18 +35,18 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 ---@return ModelSceneType, number, number modelSceneType, modelCameraIDs, modelActorsIDs
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
-Enums.ItemTryOnReason = {
+Enum.ItemTryOnReason = {
 	["Success"] = 0
 	["WrongRace"] = 1
 	["NotEquippable"] = 2
 	["DataPending"] = 3
 }
 
-Enums.ModelSceneSetting = {
+Enum.ModelSceneSetting = {
 	["AlignLightToOrbitDelta"] = 1
 }
 
-Enums.ModelSceneType = {
+Enum.ModelSceneType = {
 	["MountJournal"] = 0
 	["PetJournalCard"] = 1
 	["ShopCard"] = 2

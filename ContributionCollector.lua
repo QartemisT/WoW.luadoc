@@ -70,11 +70,11 @@ function C_ContributionCollector.HasPendingContribution(contributionID) end
 ---@return bool awaitingData
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
-Enums.ContributionAppearanceFlags = {
+Enum.ContributionAppearanceFlags = {
 	["TooltipUseTimeRemaining"] = 0
 }
 
-Enums.ContributionResult = {
+Enum.ContributionResult = {
 	["Success"] = 0
 	["MustBeNearNpc"] = 1
 	["IncorrectState"] = 2
@@ -85,7 +85,7 @@ Enums.ContributionResult = {
 	["InternalError"] = 7
 }
 
-Enums.ContributionState = {
+Enum.ContributionState = {
 	["None"] = 0
 	["Building"] = 1
 	["Active"] = 2

@@ -21,7 +21,7 @@ function C_AnimaDiversion.OpenAnimaDiversionUI() end
 ---@param temporary bool 
 function C_AnimaDiversion.SelectAnimaNode(talentID, temporary) end
 
-Enums.AnimaDiversionNodeState = {
+Enum.AnimaDiversionNodeState = {
 	["Unavailable"] = 0
 	["Available"] = 1
 	["SelectedTemporary"] = 2

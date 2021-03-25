@@ -15,7 +15,7 @@ function C_PlayerChoice.GetPlayerChoiceRewardInfo(rewardIndex) end
 ---@return bool isWaitingForResponse
 function C_PlayerChoice.IsWaitingForPlayerChoiceResponse() end
 
-Enums.PlayerChoiceRarity = {
+Enum.PlayerChoiceRarity = {
 	["Common"] = 0
 	["Uncommon"] = 1
 	["Rare"] = 2

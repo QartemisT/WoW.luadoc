@@ -129,14 +129,14 @@ function UnitTreatAsPlayerForDisplay(unit) end
 ---@return number uiWidgetSet
 function UnitWidgetSet(unit) end
 
-Enums.PhaseReason = {
+Enum.PhaseReason = {
 	["Phasing"] = 0
 	["Sharding"] = 1
 	["WarMode"] = 2
 	["ChromieTime"] = 3
 }
 
-Enums.PowerType = {
+Enum.PowerType = {
 	["HealthCost"] = -2
 	["None"] = -1
 	["Mana"] = 0
@@ -161,7 +161,7 @@ Enums.PowerType = {
 	["NumPowerTypes"] = 19
 }
 
-Enums.PvPUnitClassification = {
+Enum.PvPUnitClassification = {
 	["FlagCarrierHorde"] = 0
 	["FlagCarrierAlliance"] = 1
 	["FlagCarrierNeutral"] = 2

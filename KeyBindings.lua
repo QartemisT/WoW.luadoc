@@ -5,7 +5,7 @@ C_KeyBindings = {}
 ---@return CustomBindingType|nil customBindingType
 function C_KeyBindings.GetCustomBindingType(bindingIndex) end
 
-Enums.CustomBindingType = {
+Enum.CustomBindingType = {
 	["VoicePushToTalk"] = 0
 }
 

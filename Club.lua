@@ -380,7 +380,7 @@ function C_Club.UnfocusStream(clubId, streamId) end
 ---@return ValidateNameResult result
 function C_Club.ValidateText(clubType, text, clubFieldType) end
 
-Enums.ClubActionType = {
+Enum.ClubActionType = {
 	["ErrorClubActionSubscribe"] = 0
 	["ErrorClubActionCreate"] = 1
 	["ErrorClubActionEdit"] = 2
@@ -410,7 +410,7 @@ Enums.ClubActionType = {
 	["ErrorClubActionDestroyMessage"] = 26
 }
 
-Enums.ClubErrorType = {
+Enum.ClubErrorType = {
 	["ErrorCommunitiesNone"] = 0
 	["ErrorCommunitiesUnknown"] = 1
 	["ErrorCommunitiesNeutralFaction"] = 2
@@ -453,7 +453,7 @@ Enums.ClubErrorType = {
 	["ErrorClubTicketHasConsumedAllowedRedeemCount"] = 39
 }
 
-Enums.ClubFieldType = {
+Enum.ClubFieldType = {
 	["ClubName"] = 0
 	["ClubShortName"] = 1
 	["ClubDescription"] = 2
@@ -463,13 +463,13 @@ Enums.ClubFieldType = {
 	["NumTypes"] = 6
 }
 
-Enums.ClubInvitationCandidateStatus = {
+Enum.ClubInvitationCandidateStatus = {
 	["Available"] = 0
 	["InvitePending"] = 1
 	["AlreadyMember"] = 2
 }
 
-Enums.ClubMemberPresence = {
+Enum.ClubMemberPresence = {
 	["Unknown"] = 0
 	["Online"] = 1
 	["OnlineMobile"] = 2
@@ -478,46 +478,46 @@ Enums.ClubMemberPresence = {
 	["Busy"] = 5
 }
 
-Enums.ClubRemovedReason = {
+Enum.ClubRemovedReason = {
 	["None"] = 0
 	["Banned"] = 1
 	["Removed"] = 2
 	["ClubDestroyed"] = 3
 }
 
-Enums.ClubRestrictionReason = {
+Enum.ClubRestrictionReason = {
 	["None"] = 0
 	["Unavailable"] = 1
 }
 
-Enums.ClubRoleIdentifier = {
+Enum.ClubRoleIdentifier = {
 	["Owner"] = 1
 	["Leader"] = 2
 	["Moderator"] = 3
 	["Member"] = 4
 }
 
-Enums.ClubStreamNotificationFilter = {
+Enum.ClubStreamNotificationFilter = {
 	["None"] = 0
 	["Mention"] = 1
 	["All"] = 2
 }
 
-Enums.ClubStreamType = {
+Enum.ClubStreamType = {
 	["General"] = 0
 	["Guild"] = 1
 	["Officer"] = 2
 	["Other"] = 3
 }
 
-Enums.ClubType = {
+Enum.ClubType = {
 	["BattleNet"] = 0
 	["Character"] = 1
 	["Guild"] = 2
 	["Other"] = 3
 }
 
-Enums.ValidateNameResult = {
+Enum.ValidateNameResult = {
 	["NameSuccess"] = 0
 	["NameFailure"] = 1
 	["NameNoName"] = 2

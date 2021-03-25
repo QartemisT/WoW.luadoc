@@ -13,7 +13,7 @@ function C_Bounties.GetBountyInfo(bountyID) end
 ---@return MapOverlayDisplayLocation, number, number displayLocation, lockQuestID, bountySetID
 function C_Bounties.GetBountySetInfoForMapID(uiMapID) end
 
-Enums.MapOverlayDisplayLocation = {
+Enum.MapOverlayDisplayLocation = {
 	["Default"] = 0
 	["BottomLeft"] = 1
 	["TopLeft"] = 2

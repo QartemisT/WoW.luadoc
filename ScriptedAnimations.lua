@@ -4,7 +4,7 @@ C_ScriptedAnimations = {}
 ---@return ScriptedAnimationEffect scriptedAnimationEffects
 function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 
-Enums.ScriptedAnimationBehavior = {
+Enum.ScriptedAnimationBehavior = {
 	["None"] = 0
 	["TargetShake"] = 1
 	["TargetKnockBack"] = 2
@@ -13,7 +13,7 @@ Enums.ScriptedAnimationBehavior = {
 	["UIParentShake"] = 5
 }
 
-Enums.ScriptedAnimationTrajectory = {
+Enum.ScriptedAnimationTrajectory = {
 	["AtSource"] = 0
 	["AtTarget"] = 1
 	["Straight"] = 2

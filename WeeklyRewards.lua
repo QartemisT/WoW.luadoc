@@ -46,7 +46,7 @@ function C_WeeklyRewards.HasGeneratedRewards() end
 ---@return bool isInteracting
 function C_WeeklyRewards.HasInteraction() end
 
-Enums.ConquestProgressBarDisplayType = {
+Enum.ConquestProgressBarDisplayType = {
 	["FirstChest"] = 0
 	["AdditionalChest"] = 1
 	["Seasonal"] = 2

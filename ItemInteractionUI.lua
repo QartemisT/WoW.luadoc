@@ -24,7 +24,7 @@ function C_ItemInteraction.SetCorruptionReforgerItemTooltip() end
 ---@return bool success
 function C_ItemInteraction.SetPendingItem(item) end
 
-Enums.ItemInteractionFrameType = {
+Enum.ItemInteractionFrameType = {
 	["CleanseCorruption"] = 0
 }
 

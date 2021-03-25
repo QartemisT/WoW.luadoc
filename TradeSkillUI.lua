@@ -65,7 +65,7 @@ function C_TradeSkillUI.IsEmptySkillLineCategory(categoryID) end
 ---@overload fun(recipeSpellID:number, numCasts:number)
 function C_TradeSkillUI.SetRecipeRepeatCount(recipeSpellID, numCasts, optionalReagents) end
 
-Enums.OptionalReagentItemFlag = {
+Enum.OptionalReagentItemFlag = {
 	["TooltipShowsAsStatModifications"] = 0
 }
 

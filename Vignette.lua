@@ -17,7 +17,7 @@ function C_VignetteInfo.GetVignettePosition(vignetteGUID, uiMapID) end
 ---@return string vignetteGUIDs
 function C_VignetteInfo.GetVignettes() end
 
-Enums.VignetteType = {
+Enum.VignetteType = {
 	["Normal"] = 0
 	["PvPBounty"] = 1
 	["Torghast"] = 2

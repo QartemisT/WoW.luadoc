@@ -17,7 +17,7 @@ function C_Console.PrintAllMatchingCommands(partialCommandText) end
 ---@param fontHeightInPixels number 
 function C_Console.SetFontHeight(fontHeightInPixels) end
 
-Enums.ConsoleCategory = {
+Enum.ConsoleCategory = {
 	["Debug"] = 0
 	["Graphics"] = 1
 	["Console"] = 2
@@ -31,7 +31,7 @@ Enums.ConsoleCategory = {
 	["None"] = 10
 }
 
-Enums.ConsoleColorType = {
+Enum.ConsoleColorType = {
 	["DefaultColor"] = 0
 	["InputColor"] = 1
 	["EchoColor"] = 2
@@ -46,7 +46,7 @@ Enums.ConsoleColorType = {
 	["DefaultGreen"] = 11
 }
 
-Enums.ConsoleCommandType = {
+Enum.ConsoleCommandType = {
 	["Cvar"] = 0
 	["Command"] = 1
 	["Script"] = 2

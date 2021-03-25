@@ -9,7 +9,7 @@ function C_IncomingSummon.HasIncomingSummon(unit) end
 ---@return SummonStatus status
 function C_IncomingSummon.IncomingSummonStatus(unit) end
 
-Enums.SummonStatus = {
+Enum.SummonStatus = {
 	["None"] = 0
 	["Pending"] = 1
 	["Accepted"] = 2

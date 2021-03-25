@@ -1,14 +1,14 @@
 ---@class Tooltip
 C_Tooltip = {}
 
-Enums.TooltipSide = {
+Enum.TooltipSide = {
 	["Left"] = 0
 	["Right"] = 1
 	["Top"] = 2
 	["Bottom"] = 3
 }
 
-Enums.TooltipTextureAnchor = {
+Enum.TooltipTextureAnchor = {
 	["LeftTop"] = 0
 	["LeftCenter"] = 1
 	["LeftBottom"] = 2
@@ -18,7 +18,7 @@ Enums.TooltipTextureAnchor = {
 	["All"] = 6
 }
 
-Enums.TooltipTextureRelativeRegion = {
+Enum.TooltipTextureRelativeRegion = {
 	["LeftLine"] = 0
 	["RightLine"] = 1
 }

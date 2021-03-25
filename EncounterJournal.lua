@@ -51,7 +51,7 @@ function C_EncounterJournal.SetPreviewPvpTier(tier) end
 ---@param filterSlot ItemSlotFilterType 
 function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
-Enums.ItemSlotFilterType = {
+Enum.ItemSlotFilterType = {
 	["Head"] = 0
 	["Neck"] = 1
 	["Shoulder"] = 2
