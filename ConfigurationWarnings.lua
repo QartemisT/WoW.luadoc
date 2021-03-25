@@ -16,14 +16,14 @@ function C_ConfigurationWarnings.GetConfigurationWarnings(includeSeenWarnings) e
 ---@param configurationWarning ConfigurationWarning 
 function C_ConfigurationWarnings.SetConfigurationWarningSeen(configurationWarning) end
 
----@class ConfigurationWarning
-local ConfigurationWarning = {}
-ConfigurationWarning.ShaderModelWillBeOutdated = 0
-ConfigurationWarning.ShaderModelIsOutdated = 1
-ConfigurationWarning.ConsoleDeviceSseOutdated = 2
-ConfigurationWarning.DriverBlacklisted = 3
-ConfigurationWarning.DriverOutOfDate = 4
-ConfigurationWarning.DeviceBlacklisted = 5
-ConfigurationWarning.GraphicsApiWillBeOutdated = 6
-ConfigurationWarning.OsBitsWillBeOutdated = 7
+Enums.ConfigurationWarning = {
+	["ShaderModelWillBeOutdated"] = 0
+	["ShaderModelIsOutdated"] = 1
+	["ConsoleDeviceSseOutdated"] = 2
+	["DriverBlacklisted"] = 3
+	["DriverOutOfDate"] = 4
+	["DeviceBlacklisted"] = 5
+	["GraphicsApiWillBeOutdated"] = 6
+	["OsBitsWillBeOutdated"] = 7
+}
 

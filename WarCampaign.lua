@@ -40,12 +40,12 @@ function C_CampaignInfo.IsCampaignQuest(questID) end
 ---@return bool useNormalQuestIcons
 function C_CampaignInfo.UsesNormalQuestIcons(campaignID) end
 
----@class CampaignState
-local CampaignState = {}
-CampaignState.Invalid = 0
-CampaignState.Complete = 1
-CampaignState.InProgress = 2
-CampaignState.Stalled = 3
+Enums.CampaignState = {
+	["Invalid"] = 0
+	["Complete"] = 1
+	["InProgress"] = 2
+	["Stalled"] = 3
+}
 
 ---@class CampaignChapterInfo
 ---@field name string 

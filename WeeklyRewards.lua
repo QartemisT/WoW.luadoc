@@ -46,11 +46,11 @@ function C_WeeklyRewards.HasGeneratedRewards() end
 ---@return bool isInteracting
 function C_WeeklyRewards.HasInteraction() end
 
----@class ConquestProgressBarDisplayType
-local ConquestProgressBarDisplayType = {}
-ConquestProgressBarDisplayType.FirstChest = 0
-ConquestProgressBarDisplayType.AdditionalChest = 1
-ConquestProgressBarDisplayType.Seasonal = 2
+Enums.ConquestProgressBarDisplayType = {
+	["FirstChest"] = 0
+	["AdditionalChest"] = 1
+	["Seasonal"] = 2
+}
 
 ---@class ConquestWeeklyProgress
 ---@field progress number 

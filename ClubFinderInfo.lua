@@ -194,85 +194,85 @@ function C_ClubFinder.SetRecruitmentSettings(index, checked) end
 ---@return bool shouldShow
 function C_ClubFinder.ShouldShowClubFinder() end
 
----@class ClubFinderApplicationUpdateType
-local ClubFinderApplicationUpdateType = {}
-ClubFinderApplicationUpdateType.None = 0
-ClubFinderApplicationUpdateType.AcceptInvite = 1
-ClubFinderApplicationUpdateType.DeclineInvite = 2
-ClubFinderApplicationUpdateType.Cancel = 3
+Enums.ClubFinderApplicationUpdateType = {
+	["None"] = 0
+	["AcceptInvite"] = 1
+	["DeclineInvite"] = 2
+	["Cancel"] = 3
+}
 
----@class ClubFinderClubPostingStatusFlags
-local ClubFinderClubPostingStatusFlags = {}
-ClubFinderClubPostingStatusFlags.None = 0
-ClubFinderClubPostingStatusFlags.NeedsCacheUpdate = 1
-ClubFinderClubPostingStatusFlags.ForceDescriptionChange = 2
-ClubFinderClubPostingStatusFlags.ForceNameChange = 3
-ClubFinderClubPostingStatusFlags.UnderReview = 4
-ClubFinderClubPostingStatusFlags.Banned = 5
-ClubFinderClubPostingStatusFlags.FakePost = 6
-ClubFinderClubPostingStatusFlags.PendingDelete = 7
-ClubFinderClubPostingStatusFlags.PostDelisted = 8
+Enums.ClubFinderClubPostingStatusFlags = {
+	["None"] = 0
+	["NeedsCacheUpdate"] = 1
+	["ForceDescriptionChange"] = 2
+	["ForceNameChange"] = 3
+	["UnderReview"] = 4
+	["Banned"] = 5
+	["FakePost"] = 6
+	["PendingDelete"] = 7
+	["PostDelisted"] = 8
+}
 
----@class ClubFinderDisableReason
-local ClubFinderDisableReason = {}
-ClubFinderDisableReason.Muted = 0
-ClubFinderDisableReason.Silenced = 1
-ClubFinderDisableReason.VeteranTrial = 2
+Enums.ClubFinderDisableReason = {
+	["Muted"] = 0
+	["Silenced"] = 1
+	["VeteranTrial"] = 2
+}
 
----@class ClubFinderPostingReportType
-local ClubFinderPostingReportType = {}
-ClubFinderPostingReportType.PostersName = 0
-ClubFinderPostingReportType.ClubName = 1
-ClubFinderPostingReportType.PostingDescription = 2
-ClubFinderPostingReportType.ApplicantsName = 3
-ClubFinderPostingReportType.JoinNote = 4
+Enums.ClubFinderPostingReportType = {
+	["PostersName"] = 0
+	["ClubName"] = 1
+	["PostingDescription"] = 2
+	["ApplicantsName"] = 3
+	["JoinNote"] = 4
+}
 
----@class ClubFinderRequestType
-local ClubFinderRequestType = {}
-ClubFinderRequestType.None = 0
-ClubFinderRequestType.Guild = 1
-ClubFinderRequestType.Community = 2
-ClubFinderRequestType.All = 3
+Enums.ClubFinderRequestType = {
+	["None"] = 0
+	["Guild"] = 1
+	["Community"] = 2
+	["All"] = 3
+}
 
----@class ClubFinderSettingFlags
-local ClubFinderSettingFlags = {}
-ClubFinderSettingFlags.None = 0
-ClubFinderSettingFlags.Dungeons = 1
-ClubFinderSettingFlags.Raids = 2
-ClubFinderSettingFlags.PvP = 3
-ClubFinderSettingFlags.RP = 4
-ClubFinderSettingFlags.Social = 5
-ClubFinderSettingFlags.Small = 6
-ClubFinderSettingFlags.Medium = 7
-ClubFinderSettingFlags.Large = 8
-ClubFinderSettingFlags.Tank = 9
-ClubFinderSettingFlags.Healer = 10
-ClubFinderSettingFlags.Damage = 11
-ClubFinderSettingFlags.EnableListing = 12
-ClubFinderSettingFlags.MaxLevelOnly = 13
-ClubFinderSettingFlags.AutoAccept = 14
-ClubFinderSettingFlags.FactionHorde = 15
-ClubFinderSettingFlags.FactionAlliance = 16
-ClubFinderSettingFlags.FactionNeutral = 17
-ClubFinderSettingFlags.SortRelevance = 18
-ClubFinderSettingFlags.SortMemberCount = 19
-ClubFinderSettingFlags.SortNewest = 20
-ClubFinderSettingFlags.LanguageReserved1 = 21
-ClubFinderSettingFlags.LanguageReserved2 = 22
-ClubFinderSettingFlags.LanguageReserved3 = 23
-ClubFinderSettingFlags.LanguageReserved4 = 24
-ClubFinderSettingFlags.LanguageReserved5 = 25
+Enums.ClubFinderSettingFlags = {
+	["None"] = 0
+	["Dungeons"] = 1
+	["Raids"] = 2
+	["PvP"] = 3
+	["RP"] = 4
+	["Social"] = 5
+	["Small"] = 6
+	["Medium"] = 7
+	["Large"] = 8
+	["Tank"] = 9
+	["Healer"] = 10
+	["Damage"] = 11
+	["EnableListing"] = 12
+	["MaxLevelOnly"] = 13
+	["AutoAccept"] = 14
+	["FactionHorde"] = 15
+	["FactionAlliance"] = 16
+	["FactionNeutral"] = 17
+	["SortRelevance"] = 18
+	["SortMemberCount"] = 19
+	["SortNewest"] = 20
+	["LanguageReserved1"] = 21
+	["LanguageReserved2"] = 22
+	["LanguageReserved3"] = 23
+	["LanguageReserved4"] = 24
+	["LanguageReserved5"] = 25
+}
 
----@class PlayerClubRequestStatus
-local PlayerClubRequestStatus = {}
-PlayerClubRequestStatus.None = 0
-PlayerClubRequestStatus.Pending = 1
-PlayerClubRequestStatus.AutoApproved = 2
-PlayerClubRequestStatus.Declined = 3
-PlayerClubRequestStatus.Approved = 4
-PlayerClubRequestStatus.Joined = 5
-PlayerClubRequestStatus.JoinedAnother = 6
-PlayerClubRequestStatus.Canceled = 7
+Enums.PlayerClubRequestStatus = {
+	["None"] = 0
+	["Pending"] = 1
+	["AutoApproved"] = 2
+	["Declined"] = 3
+	["Approved"] = 4
+	["Joined"] = 5
+	["JoinedAnother"] = 6
+	["Canceled"] = 7
+}
 
 ---@class ClubFinderApplicantInfo
 ---@field clubFinderGUID string 

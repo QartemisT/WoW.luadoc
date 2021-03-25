@@ -4,24 +4,24 @@ C_ScriptedAnimations = {}
 ---@return ScriptedAnimationEffect scriptedAnimationEffects
 function C_ScriptedAnimations.GetAllScriptedAnimationEffects() end
 
----@class ScriptedAnimationBehavior
-local ScriptedAnimationBehavior = {}
-ScriptedAnimationBehavior.None = 0
-ScriptedAnimationBehavior.TargetShake = 1
-ScriptedAnimationBehavior.TargetKnockBack = 2
-ScriptedAnimationBehavior.SourceRecoil = 3
-ScriptedAnimationBehavior.SourceCollideWithTarget = 4
-ScriptedAnimationBehavior.UIParentShake = 5
+Enums.ScriptedAnimationBehavior = {
+	["None"] = 0
+	["TargetShake"] = 1
+	["TargetKnockBack"] = 2
+	["SourceRecoil"] = 3
+	["SourceCollideWithTarget"] = 4
+	["UIParentShake"] = 5
+}
 
----@class ScriptedAnimationTrajectory
-local ScriptedAnimationTrajectory = {}
-ScriptedAnimationTrajectory.AtSource = 0
-ScriptedAnimationTrajectory.AtTarget = 1
-ScriptedAnimationTrajectory.Straight = 2
-ScriptedAnimationTrajectory.CurveLeft = 3
-ScriptedAnimationTrajectory.CurveRight = 4
-ScriptedAnimationTrajectory.CurveRandom = 5
-ScriptedAnimationTrajectory.HalfwayBetween = 6
+Enums.ScriptedAnimationTrajectory = {
+	["AtSource"] = 0
+	["AtTarget"] = 1
+	["Straight"] = 2
+	["CurveLeft"] = 3
+	["CurveRight"] = 4
+	["CurveRandom"] = 5
+	["HalfwayBetween"] = 6
+}
 
 ---@class ScriptedAnimationEffect
 ---@field id number 

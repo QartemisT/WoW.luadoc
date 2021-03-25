@@ -13,27 +13,27 @@ function C_Cursor.GetCursorItem() end
 ---@param streamId string 
 function C_Cursor.SetCursorCommunitiesStream(clubId, streamId) end
 
----@class UICursorType
-local UICursorType = {}
-UICursorType.Default = 0
-UICursorType.Item = 1
-UICursorType.Money = 2
-UICursorType.Spell = 3
-UICursorType.PetAction = 4
-UICursorType.Merchant = 5
-UICursorType.ActionBar = 6
-UICursorType.Macro = 7
-UICursorType.AmmoObsolete = 8
-UICursorType.Pet = 9
-UICursorType.GuildBank = 10
-UICursorType.GuildBankMoney = 11
-UICursorType.EquipmentSet = 12
-UICursorType.Currency = 13
-UICursorType.Flyout = 14
-UICursorType.VoidItem = 15
-UICursorType.BattlePet = 16
-UICursorType.Mount = 17
-UICursorType.Toy = 18
-UICursorType.CommunitiesStream = 19
-UICursorType.ConduitCollectionItem = 20
+Enums.UICursorType = {
+	["Default"] = 0
+	["Item"] = 1
+	["Money"] = 2
+	["Spell"] = 3
+	["PetAction"] = 4
+	["Merchant"] = 5
+	["ActionBar"] = 6
+	["Macro"] = 7
+	["AmmoObsolete"] = 8
+	["Pet"] = 9
+	["GuildBank"] = 10
+	["GuildBankMoney"] = 11
+	["EquipmentSet"] = 12
+	["Currency"] = 13
+	["Flyout"] = 14
+	["VoidItem"] = 15
+	["BattlePet"] = 16
+	["Mount"] = 17
+	["Toy"] = 18
+	["CommunitiesStream"] = 19
+	["ConduitCollectionItem"] = 20
+}
 

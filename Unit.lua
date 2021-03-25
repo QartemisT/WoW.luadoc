@@ -129,51 +129,51 @@ function UnitTreatAsPlayerForDisplay(unit) end
 ---@return number uiWidgetSet
 function UnitWidgetSet(unit) end
 
----@class PhaseReason
-local PhaseReason = {}
-PhaseReason.Phasing = 0
-PhaseReason.Sharding = 1
-PhaseReason.WarMode = 2
-PhaseReason.ChromieTime = 3
+Enums.PhaseReason = {
+	["Phasing"] = 0
+	["Sharding"] = 1
+	["WarMode"] = 2
+	["ChromieTime"] = 3
+}
 
----@class PowerType
-local PowerType = {}
-PowerType.HealthCost = -2
-PowerType.None = -1
-PowerType.Mana = 0
-PowerType.Rage = 1
-PowerType.Focus = 2
-PowerType.Energy = 3
-PowerType.ComboPoints = 4
-PowerType.Runes = 5
-PowerType.RunicPower = 6
-PowerType.SoulShards = 7
-PowerType.LunarPower = 8
-PowerType.HolyPower = 9
-PowerType.Alternate = 10
-PowerType.Maelstrom = 11
-PowerType.Chi = 12
-PowerType.Insanity = 13
-PowerType.Obsolete = 14
-PowerType.Obsolete2 = 15
-PowerType.ArcaneCharges = 16
-PowerType.Fury = 17
-PowerType.Pain = 18
-PowerType.NumPowerTypes = 19
+Enums.PowerType = {
+	["HealthCost"] = -2
+	["None"] = -1
+	["Mana"] = 0
+	["Rage"] = 1
+	["Focus"] = 2
+	["Energy"] = 3
+	["ComboPoints"] = 4
+	["Runes"] = 5
+	["RunicPower"] = 6
+	["SoulShards"] = 7
+	["LunarPower"] = 8
+	["HolyPower"] = 9
+	["Alternate"] = 10
+	["Maelstrom"] = 11
+	["Chi"] = 12
+	["Insanity"] = 13
+	["Obsolete"] = 14
+	["Obsolete2"] = 15
+	["ArcaneCharges"] = 16
+	["Fury"] = 17
+	["Pain"] = 18
+	["NumPowerTypes"] = 19
+}
 
----@class PvPUnitClassification
-local PvPUnitClassification = {}
-PvPUnitClassification.FlagCarrierHorde = 0
-PvPUnitClassification.FlagCarrierAlliance = 1
-PvPUnitClassification.FlagCarrierNeutral = 2
-PvPUnitClassification.CartRunnerHorde = 3
-PvPUnitClassification.CartRunnerAlliance = 4
-PvPUnitClassification.AssassinHorde = 5
-PvPUnitClassification.AssassinAlliance = 6
-PvPUnitClassification.OrbCarrierBlue = 7
-PvPUnitClassification.OrbCarrierGreen = 8
-PvPUnitClassification.OrbCarrierOrange = 9
-PvPUnitClassification.OrbCarrierPurple = 10
+Enums.PvPUnitClassification = {
+	["FlagCarrierHorde"] = 0
+	["FlagCarrierAlliance"] = 1
+	["FlagCarrierNeutral"] = 2
+	["CartRunnerHorde"] = 3
+	["CartRunnerAlliance"] = 4
+	["AssassinHorde"] = 5
+	["AssassinAlliance"] = 6
+	["OrbCarrierBlue"] = 7
+	["OrbCarrierGreen"] = 8
+	["OrbCarrierOrange"] = 9
+	["OrbCarrierPurple"] = 10
+}
 
 ---@class CorruptionEffectInfo
 ---@field name string 

@@ -482,12 +482,12 @@ function C_Commentator.ZoomIn() end
 
 function C_Commentator.ZoomOut() end
 
----@class TrackedSpellCategory
-local TrackedSpellCategory = {}
-TrackedSpellCategory.Offensive = 0
-TrackedSpellCategory.Defensive = 1
-TrackedSpellCategory.Debuff = 2
-TrackedSpellCategory.Count = 3
+Enums.TrackedSpellCategory = {
+	["Offensive"] = 0
+	["Defensive"] = 1
+	["Debuff"] = 2
+	["Count"] = 3
+}
 
 ---@class CommentatorHistory
 ---@field series table 

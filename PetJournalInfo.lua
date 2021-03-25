@@ -27,13 +27,13 @@ function C_PetJournal.PetIsSummonable(battlePetGUID) end
 ---@return bool|nil usesRandomDisplay
 function C_PetJournal.PetUsesRandomDisplay(speciesID) end
 
----@class PetJournalError
-local PetJournalError = {}
-PetJournalError.None = 0
-PetJournalError.PetIsDead = 1
-PetJournalError.JournalIsLocked = 2
-PetJournalError.InvalidFaction = 3
-PetJournalError.NoFavoritesToSummon = 4
-PetJournalError.NoValidRandomSummon = 5
-PetJournalError.InvalidCovenant = 6
+Enums.PetJournalError = {
+	["None"] = 0
+	["PetIsDead"] = 1
+	["JournalIsLocked"] = 2
+	["InvalidFaction"] = 3
+	["NoFavoritesToSummon"] = 4
+	["NoValidRandomSummon"] = 5
+	["InvalidCovenant"] = 6
+}
 

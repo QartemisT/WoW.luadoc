@@ -234,43 +234,43 @@ function C_VoiceChat.ToggleMemberMuted(playerLocation) end
 
 function C_VoiceChat.ToggleMuted() end
 
----@class CommunicationMode
-local CommunicationMode = {}
-CommunicationMode.PushToTalk = 0
-CommunicationMode.OpenMic = 1
+Enums.CommunicationMode = {
+	["PushToTalk"] = 0
+	["OpenMic"] = 1
+}
 
----@class VoiceChannelErrorReason
-local VoiceChannelErrorReason = {}
-VoiceChannelErrorReason.Unknown = 0
-VoiceChannelErrorReason.IsBattleNetChannel = 1
+Enums.VoiceChannelErrorReason = {
+	["Unknown"] = 0
+	["IsBattleNetChannel"] = 1
+}
 
----@class VoiceChatStatusCode
-local VoiceChatStatusCode = {}
-VoiceChatStatusCode.Success = 0
-VoiceChatStatusCode.OperationPending = 1
-VoiceChatStatusCode.TooManyRequests = 2
-VoiceChatStatusCode.LoginProhibited = 3
-VoiceChatStatusCode.ClientNotInitialized = 4
-VoiceChatStatusCode.ClientNotLoggedIn = 5
-VoiceChatStatusCode.ClientAlreadyLoggedIn = 6
-VoiceChatStatusCode.ChannelNameTooShort = 7
-VoiceChatStatusCode.ChannelNameTooLong = 8
-VoiceChatStatusCode.ChannelAlreadyExists = 9
-VoiceChatStatusCode.AlreadyInChannel = 10
-VoiceChatStatusCode.TargetNotFound = 11
-VoiceChatStatusCode.Failure = 12
-VoiceChatStatusCode.ServiceLost = 13
-VoiceChatStatusCode.UnableToLaunchProxy = 14
-VoiceChatStatusCode.ProxyConnectionTimeOut = 15
-VoiceChatStatusCode.ProxyConnectionUnableToConnect = 16
-VoiceChatStatusCode.ProxyConnectionUnexpectedDisconnect = 17
-VoiceChatStatusCode.Disabled = 18
-VoiceChatStatusCode.UnsupportedChatChannelType = 19
-VoiceChatStatusCode.InvalidCommunityStream = 20
-VoiceChatStatusCode.PlayerSilenced = 21
-VoiceChatStatusCode.PlayerVoiceChatParentalDisabled = 22
-VoiceChatStatusCode.InvalidInputDevice = 23
-VoiceChatStatusCode.InvalidOutputDevice = 24
+Enums.VoiceChatStatusCode = {
+	["Success"] = 0
+	["OperationPending"] = 1
+	["TooManyRequests"] = 2
+	["LoginProhibited"] = 3
+	["ClientNotInitialized"] = 4
+	["ClientNotLoggedIn"] = 5
+	["ClientAlreadyLoggedIn"] = 6
+	["ChannelNameTooShort"] = 7
+	["ChannelNameTooLong"] = 8
+	["ChannelAlreadyExists"] = 9
+	["AlreadyInChannel"] = 10
+	["TargetNotFound"] = 11
+	["Failure"] = 12
+	["ServiceLost"] = 13
+	["UnableToLaunchProxy"] = 14
+	["ProxyConnectionTimeOut"] = 15
+	["ProxyConnectionUnableToConnect"] = 16
+	["ProxyConnectionUnexpectedDisconnect"] = 17
+	["Disabled"] = 18
+	["UnsupportedChatChannelType"] = 19
+	["InvalidCommunityStream"] = 20
+	["PlayerSilenced"] = 21
+	["PlayerVoiceChatParentalDisabled"] = 22
+	["InvalidInputDevice"] = 23
+	["InvalidOutputDevice"] = 24
+}
 
 ---@class VoiceAudioDevice
 ---@field deviceID string 

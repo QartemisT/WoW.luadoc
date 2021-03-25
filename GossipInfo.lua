@@ -54,17 +54,17 @@ function C_GossipInfo.SelectAvailableQuest(index) end
 ---@overload fun(index:number)
 function C_GossipInfo.SelectOption(index, text, confirmed) end
 
----@class GossipOptionRewardType
-local GossipOptionRewardType = {}
-GossipOptionRewardType.Item = 0
-GossipOptionRewardType.Currency = 1
+Enums.GossipOptionRewardType = {
+	["Item"] = 0
+	["Currency"] = 1
+}
 
----@class GossipOptionStatus
-local GossipOptionStatus = {}
-GossipOptionStatus.Available = 0
-GossipOptionStatus.Unavailable = 1
-GossipOptionStatus.Locked = 2
-GossipOptionStatus.AlreadyComplete = 3
+Enums.GossipOptionStatus = {
+	["Available"] = 0
+	["Unavailable"] = 1
+	["Locked"] = 2
+	["AlreadyComplete"] = 3
+}
 
 ---@class GossipOptionRewardInfo
 ---@field id number 

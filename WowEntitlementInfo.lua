@@ -1,16 +1,16 @@
 ---@class WowEntitlementInfo
 C_WowEntitlementInfo = {}
 
----@class WoWEntitlementType
-local WoWEntitlementType = {}
-WoWEntitlementType.Item = 0
-WoWEntitlementType.Mount = 1
-WoWEntitlementType.Battlepet = 2
-WoWEntitlementType.Toy = 3
-WoWEntitlementType.Appearance = 4
-WoWEntitlementType.AppearanceSet = 5
-WoWEntitlementType.GameTime = 6
-WoWEntitlementType.Title = 7
-WoWEntitlementType.Illusion = 8
-WoWEntitlementType.Invalid = 9
+Enums.WoWEntitlementType = {
+	["Item"] = 0
+	["Mount"] = 1
+	["Battlepet"] = 2
+	["Toy"] = 3
+	["Appearance"] = 4
+	["AppearanceSet"] = 5
+	["GameTime"] = 6
+	["Title"] = 7
+	["Illusion"] = 8
+	["Invalid"] = 9
+}
 

@@ -380,163 +380,163 @@ function C_Club.UnfocusStream(clubId, streamId) end
 ---@return ValidateNameResult result
 function C_Club.ValidateText(clubType, text, clubFieldType) end
 
----@class ClubActionType
-local ClubActionType = {}
-ClubActionType.ErrorClubActionSubscribe = 0
-ClubActionType.ErrorClubActionCreate = 1
-ClubActionType.ErrorClubActionEdit = 2
-ClubActionType.ErrorClubActionDestroy = 3
-ClubActionType.ErrorClubActionLeave = 4
-ClubActionType.ErrorClubActionCreateTicket = 5
-ClubActionType.ErrorClubActionDestroyTicket = 6
-ClubActionType.ErrorClubActionRedeemTicket = 7
-ClubActionType.ErrorClubActionGetTicket = 8
-ClubActionType.ErrorClubActionGetTickets = 9
-ClubActionType.ErrorClubActionGetBans = 10
-ClubActionType.ErrorClubActionGetInvitations = 11
-ClubActionType.ErrorClubActionRevokeInvitation = 12
-ClubActionType.ErrorClubActionAcceptInvitation = 13
-ClubActionType.ErrorClubActionDeclineInvitation = 14
-ClubActionType.ErrorClubActionCreateStream = 15
-ClubActionType.ErrorClubActionEditStream = 16
-ClubActionType.ErrorClubActionDestroyStream = 17
-ClubActionType.ErrorClubActionInviteMember = 18
-ClubActionType.ErrorClubActionEditMember = 19
-ClubActionType.ErrorClubActionEditMemberNote = 20
-ClubActionType.ErrorClubActionKickMember = 21
-ClubActionType.ErrorClubActionAddBan = 22
-ClubActionType.ErrorClubActionRemoveBan = 23
-ClubActionType.ErrorClubActionCreateMessage = 24
-ClubActionType.ErrorClubActionEditMessage = 25
-ClubActionType.ErrorClubActionDestroyMessage = 26
+Enums.ClubActionType = {
+	["ErrorClubActionSubscribe"] = 0
+	["ErrorClubActionCreate"] = 1
+	["ErrorClubActionEdit"] = 2
+	["ErrorClubActionDestroy"] = 3
+	["ErrorClubActionLeave"] = 4
+	["ErrorClubActionCreateTicket"] = 5
+	["ErrorClubActionDestroyTicket"] = 6
+	["ErrorClubActionRedeemTicket"] = 7
+	["ErrorClubActionGetTicket"] = 8
+	["ErrorClubActionGetTickets"] = 9
+	["ErrorClubActionGetBans"] = 10
+	["ErrorClubActionGetInvitations"] = 11
+	["ErrorClubActionRevokeInvitation"] = 12
+	["ErrorClubActionAcceptInvitation"] = 13
+	["ErrorClubActionDeclineInvitation"] = 14
+	["ErrorClubActionCreateStream"] = 15
+	["ErrorClubActionEditStream"] = 16
+	["ErrorClubActionDestroyStream"] = 17
+	["ErrorClubActionInviteMember"] = 18
+	["ErrorClubActionEditMember"] = 19
+	["ErrorClubActionEditMemberNote"] = 20
+	["ErrorClubActionKickMember"] = 21
+	["ErrorClubActionAddBan"] = 22
+	["ErrorClubActionRemoveBan"] = 23
+	["ErrorClubActionCreateMessage"] = 24
+	["ErrorClubActionEditMessage"] = 25
+	["ErrorClubActionDestroyMessage"] = 26
+}
 
----@class ClubErrorType
-local ClubErrorType = {}
-ClubErrorType.ErrorCommunitiesNone = 0
-ClubErrorType.ErrorCommunitiesUnknown = 1
-ClubErrorType.ErrorCommunitiesNeutralFaction = 2
-ClubErrorType.ErrorCommunitiesUnknownRealm = 3
-ClubErrorType.ErrorCommunitiesBadTarget = 4
-ClubErrorType.ErrorCommunitiesWrongFaction = 5
-ClubErrorType.ErrorCommunitiesRestricted = 6
-ClubErrorType.ErrorCommunitiesIgnored = 7
-ClubErrorType.ErrorCommunitiesGuild = 8
-ClubErrorType.ErrorCommunitiesWrongRegion = 9
-ClubErrorType.ErrorCommunitiesUnknownTicket = 10
-ClubErrorType.ErrorCommunitiesMissingShortName = 11
-ClubErrorType.ErrorCommunitiesProfanity = 12
-ClubErrorType.ErrorCommunitiesTrial = 13
-ClubErrorType.ErrorCommunitiesVeteranTrial = 14
-ClubErrorType.ErrorCommunitiesChatMute = 15
-ClubErrorType.ErrorClubFull = 16
-ClubErrorType.ErrorClubNoClub = 17
-ClubErrorType.ErrorClubNotMember = 18
-ClubErrorType.ErrorClubAlreadyMember = 19
-ClubErrorType.ErrorClubNoSuchMember = 20
-ClubErrorType.ErrorClubNoSuchInvitation = 21
-ClubErrorType.ErrorClubInvitationAlreadyExists = 22
-ClubErrorType.ErrorClubInvalidRoleID = 23
-ClubErrorType.ErrorClubInsufficientPrivileges = 24
-ClubErrorType.ErrorClubTooManyClubsJoined = 25
-ClubErrorType.ErrorClubVoiceFull = 26
-ClubErrorType.ErrorClubStreamNoStream = 27
-ClubErrorType.ErrorClubStreamInvalidName = 28
-ClubErrorType.ErrorClubStreamCountAtMin = 29
-ClubErrorType.ErrorClubStreamCountAtMax = 30
-ClubErrorType.ErrorClubMemberHasRequiredRole = 31
-ClubErrorType.ErrorClubSentInvitationCountAtMax = 32
-ClubErrorType.ErrorClubReceivedInvitationCountAtMax = 33
-ClubErrorType.ErrorClubTargetIsBanned = 34
-ClubErrorType.ErrorClubBanAlreadyExists = 35
-ClubErrorType.ErrorClubBanCountAtMax = 36
-ClubErrorType.ErrorClubTicketCountAtMax = 37
-ClubErrorType.ErrorClubTicketNoSuchTicket = 38
-ClubErrorType.ErrorClubTicketHasConsumedAllowedRedeemCount = 39
+Enums.ClubErrorType = {
+	["ErrorCommunitiesNone"] = 0
+	["ErrorCommunitiesUnknown"] = 1
+	["ErrorCommunitiesNeutralFaction"] = 2
+	["ErrorCommunitiesUnknownRealm"] = 3
+	["ErrorCommunitiesBadTarget"] = 4
+	["ErrorCommunitiesWrongFaction"] = 5
+	["ErrorCommunitiesRestricted"] = 6
+	["ErrorCommunitiesIgnored"] = 7
+	["ErrorCommunitiesGuild"] = 8
+	["ErrorCommunitiesWrongRegion"] = 9
+	["ErrorCommunitiesUnknownTicket"] = 10
+	["ErrorCommunitiesMissingShortName"] = 11
+	["ErrorCommunitiesProfanity"] = 12
+	["ErrorCommunitiesTrial"] = 13
+	["ErrorCommunitiesVeteranTrial"] = 14
+	["ErrorCommunitiesChatMute"] = 15
+	["ErrorClubFull"] = 16
+	["ErrorClubNoClub"] = 17
+	["ErrorClubNotMember"] = 18
+	["ErrorClubAlreadyMember"] = 19
+	["ErrorClubNoSuchMember"] = 20
+	["ErrorClubNoSuchInvitation"] = 21
+	["ErrorClubInvitationAlreadyExists"] = 22
+	["ErrorClubInvalidRoleID"] = 23
+	["ErrorClubInsufficientPrivileges"] = 24
+	["ErrorClubTooManyClubsJoined"] = 25
+	["ErrorClubVoiceFull"] = 26
+	["ErrorClubStreamNoStream"] = 27
+	["ErrorClubStreamInvalidName"] = 28
+	["ErrorClubStreamCountAtMin"] = 29
+	["ErrorClubStreamCountAtMax"] = 30
+	["ErrorClubMemberHasRequiredRole"] = 31
+	["ErrorClubSentInvitationCountAtMax"] = 32
+	["ErrorClubReceivedInvitationCountAtMax"] = 33
+	["ErrorClubTargetIsBanned"] = 34
+	["ErrorClubBanAlreadyExists"] = 35
+	["ErrorClubBanCountAtMax"] = 36
+	["ErrorClubTicketCountAtMax"] = 37
+	["ErrorClubTicketNoSuchTicket"] = 38
+	["ErrorClubTicketHasConsumedAllowedRedeemCount"] = 39
+}
 
----@class ClubFieldType
-local ClubFieldType = {}
-ClubFieldType.ClubName = 0
-ClubFieldType.ClubShortName = 1
-ClubFieldType.ClubDescription = 2
-ClubFieldType.ClubBroadcast = 3
-ClubFieldType.ClubStreamName = 4
-ClubFieldType.ClubStreamSubject = 5
-ClubFieldType.NumTypes = 6
+Enums.ClubFieldType = {
+	["ClubName"] = 0
+	["ClubShortName"] = 1
+	["ClubDescription"] = 2
+	["ClubBroadcast"] = 3
+	["ClubStreamName"] = 4
+	["ClubStreamSubject"] = 5
+	["NumTypes"] = 6
+}
 
----@class ClubInvitationCandidateStatus
-local ClubInvitationCandidateStatus = {}
-ClubInvitationCandidateStatus.Available = 0
-ClubInvitationCandidateStatus.InvitePending = 1
-ClubInvitationCandidateStatus.AlreadyMember = 2
+Enums.ClubInvitationCandidateStatus = {
+	["Available"] = 0
+	["InvitePending"] = 1
+	["AlreadyMember"] = 2
+}
 
----@class ClubMemberPresence
-local ClubMemberPresence = {}
-ClubMemberPresence.Unknown = 0
-ClubMemberPresence.Online = 1
-ClubMemberPresence.OnlineMobile = 2
-ClubMemberPresence.Offline = 3
-ClubMemberPresence.Away = 4
-ClubMemberPresence.Busy = 5
+Enums.ClubMemberPresence = {
+	["Unknown"] = 0
+	["Online"] = 1
+	["OnlineMobile"] = 2
+	["Offline"] = 3
+	["Away"] = 4
+	["Busy"] = 5
+}
 
----@class ClubRemovedReason
-local ClubRemovedReason = {}
-ClubRemovedReason.None = 0
-ClubRemovedReason.Banned = 1
-ClubRemovedReason.Removed = 2
-ClubRemovedReason.ClubDestroyed = 3
+Enums.ClubRemovedReason = {
+	["None"] = 0
+	["Banned"] = 1
+	["Removed"] = 2
+	["ClubDestroyed"] = 3
+}
 
----@class ClubRestrictionReason
-local ClubRestrictionReason = {}
-ClubRestrictionReason.None = 0
-ClubRestrictionReason.Unavailable = 1
+Enums.ClubRestrictionReason = {
+	["None"] = 0
+	["Unavailable"] = 1
+}
 
----@class ClubRoleIdentifier
-local ClubRoleIdentifier = {}
-ClubRoleIdentifier.Owner = 1
-ClubRoleIdentifier.Leader = 2
-ClubRoleIdentifier.Moderator = 3
-ClubRoleIdentifier.Member = 4
+Enums.ClubRoleIdentifier = {
+	["Owner"] = 1
+	["Leader"] = 2
+	["Moderator"] = 3
+	["Member"] = 4
+}
 
----@class ClubStreamNotificationFilter
-local ClubStreamNotificationFilter = {}
-ClubStreamNotificationFilter.None = 0
-ClubStreamNotificationFilter.Mention = 1
-ClubStreamNotificationFilter.All = 2
+Enums.ClubStreamNotificationFilter = {
+	["None"] = 0
+	["Mention"] = 1
+	["All"] = 2
+}
 
----@class ClubStreamType
-local ClubStreamType = {}
-ClubStreamType.General = 0
-ClubStreamType.Guild = 1
-ClubStreamType.Officer = 2
-ClubStreamType.Other = 3
+Enums.ClubStreamType = {
+	["General"] = 0
+	["Guild"] = 1
+	["Officer"] = 2
+	["Other"] = 3
+}
 
----@class ClubType
-local ClubType = {}
-ClubType.BattleNet = 0
-ClubType.Character = 1
-ClubType.Guild = 2
-ClubType.Other = 3
+Enums.ClubType = {
+	["BattleNet"] = 0
+	["Character"] = 1
+	["Guild"] = 2
+	["Other"] = 3
+}
 
----@class ValidateNameResult
-local ValidateNameResult = {}
-ValidateNameResult.NameSuccess = 0
-ValidateNameResult.NameFailure = 1
-ValidateNameResult.NameNoName = 2
-ValidateNameResult.NameTooShort = 3
-ValidateNameResult.NameTooLong = 4
-ValidateNameResult.NameInvalidCharacter = 5
-ValidateNameResult.NameMixedLanguages = 6
-ValidateNameResult.NameProfane = 7
-ValidateNameResult.NameReserved = 8
-ValidateNameResult.NameInvalidApostrophe = 9
-ValidateNameResult.NameMultipleApostrophes = 10
-ValidateNameResult.NameThreeConsecutive = 11
-ValidateNameResult.NameInvalidSpace = 12
-ValidateNameResult.NameConsecutiveSpaces = 13
-ValidateNameResult.NameRussianConsecutiveSilentCharacters = 14
-ValidateNameResult.NameRussianSilentCharacterAtBeginningOrEnd = 15
-ValidateNameResult.NameDeclensionDoesntMatchBaseName = 16
-ValidateNameResult.NameSpacesDisallowed = 17
+Enums.ValidateNameResult = {
+	["NameSuccess"] = 0
+	["NameFailure"] = 1
+	["NameNoName"] = 2
+	["NameTooShort"] = 3
+	["NameTooLong"] = 4
+	["NameInvalidCharacter"] = 5
+	["NameMixedLanguages"] = 6
+	["NameProfane"] = 7
+	["NameReserved"] = 8
+	["NameInvalidApostrophe"] = 9
+	["NameMultipleApostrophes"] = 10
+	["NameThreeConsecutive"] = 11
+	["NameInvalidSpace"] = 12
+	["NameConsecutiveSpaces"] = 13
+	["NameRussianConsecutiveSilentCharacters"] = 14
+	["NameRussianSilentCharacterAtBeginningOrEnd"] = 15
+	["NameDeclensionDoesntMatchBaseName"] = 16
+	["NameSpacesDisallowed"] = 17
+}
 
 ---@class ClubInfo
 ---@field clubId string 

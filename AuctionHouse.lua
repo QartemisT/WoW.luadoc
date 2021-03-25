@@ -301,22 +301,22 @@ function C_AuctionHouse.SetFavoriteItem(itemKey, setFavorite) end
 ---@param quantity number 
 function C_AuctionHouse.StartCommoditiesPurchase(itemID, quantity) end
 
----@class AuctionHouseFilterCategory
-local AuctionHouseFilterCategory = {}
-AuctionHouseFilterCategory.Uncategorized = 0
-AuctionHouseFilterCategory.Equipment = 1
-AuctionHouseFilterCategory.Rarity = 2
+Enums.AuctionHouseFilterCategory = {
+	["Uncategorized"] = 0
+	["Equipment"] = 1
+	["Rarity"] = 2
+}
 
----@class AuctionStatus
-local AuctionStatus = {}
-AuctionStatus.Active = 0
-AuctionStatus.Sold = 1
+Enums.AuctionStatus = {
+	["Active"] = 0
+	["Sold"] = 1
+}
 
----@class ItemCommodityStatus
-local ItemCommodityStatus = {}
-ItemCommodityStatus.Unknown = 0
-ItemCommodityStatus.Item = 1
-ItemCommodityStatus.Commodity = 2
+Enums.ItemCommodityStatus = {
+	["Unknown"] = 0
+	["Item"] = 1
+	["Commodity"] = 2
+}
 
 ---@class AuctionHouseBrowseQuery
 ---@field searchString string 

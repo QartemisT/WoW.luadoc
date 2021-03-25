@@ -115,149 +115,149 @@ function C_UIWidgetManager.SetProcessingUnit(unit) end
 ---@param unitToken string 
 function C_UIWidgetManager.UnregisterUnitForWidgetUpdates(unitToken) end
 
----@class CaptureBarWidgetFillDirectionType
-local CaptureBarWidgetFillDirectionType = {}
-CaptureBarWidgetFillDirectionType.RightToLeft = 0
-CaptureBarWidgetFillDirectionType.LeftToRight = 1
+Enums.CaptureBarWidgetFillDirectionType = {
+	["RightToLeft"] = 0
+	["LeftToRight"] = 1
+}
 
----@class CaptureBarWidgetGlowAnimType
-local CaptureBarWidgetGlowAnimType = {}
-CaptureBarWidgetGlowAnimType.None = 0
-CaptureBarWidgetGlowAnimType.Pulse = 1
+Enums.CaptureBarWidgetGlowAnimType = {
+	["None"] = 0
+	["Pulse"] = 1
+}
 
----@class IconAndTextWidgetState
-local IconAndTextWidgetState = {}
-IconAndTextWidgetState.Hidden = 0
-IconAndTextWidgetState.Shown = 1
-IconAndTextWidgetState.ShownWithDynamicIconFlashing = 2
-IconAndTextWidgetState.ShownWithDynamicIconNotFlashing = 3
+Enums.IconAndTextWidgetState = {
+	["Hidden"] = 0
+	["Shown"] = 1
+	["ShownWithDynamicIconFlashing"] = 2
+	["ShownWithDynamicIconNotFlashing"] = 3
+}
 
----@class IconState
-local IconState = {}
-IconState.Hidden = 0
-IconState.ShowState1 = 1
-IconState.ShowState2 = 2
+Enums.IconState = {
+	["Hidden"] = 0
+	["ShowState1"] = 1
+	["ShowState2"] = 2
+}
 
----@class SpellDisplayIconDisplayType
-local SpellDisplayIconDisplayType = {}
-SpellDisplayIconDisplayType.Buff = 0
-SpellDisplayIconDisplayType.Debuff = 1
-SpellDisplayIconDisplayType.Circular = 2
+Enums.SpellDisplayIconDisplayType = {
+	["Buff"] = 0
+	["Debuff"] = 1
+	["Circular"] = 2
+}
 
----@class SpellDisplayIconSizeType
-local SpellDisplayIconSizeType = {}
-SpellDisplayIconSizeType.Small = 0
-SpellDisplayIconSizeType.Medium = 1
-SpellDisplayIconSizeType.Large = 2
+Enums.SpellDisplayIconSizeType = {
+	["Small"] = 0
+	["Medium"] = 1
+	["Large"] = 2
+}
 
----@class SpellDisplayTextShownStateType
-local SpellDisplayTextShownStateType = {}
-SpellDisplayTextShownStateType.Shown = 0
-SpellDisplayTextShownStateType.Hidden = 1
+Enums.SpellDisplayTextShownStateType = {
+	["Shown"] = 0
+	["Hidden"] = 1
+}
 
----@class StatusBarColorTintValue
-local StatusBarColorTintValue = {}
-StatusBarColorTintValue.None = 0
-StatusBarColorTintValue.Black = 1
-StatusBarColorTintValue.White = 2
-StatusBarColorTintValue.Red = 3
-StatusBarColorTintValue.Yellow = 4
-StatusBarColorTintValue.Orange = 5
-StatusBarColorTintValue.Purple = 6
-StatusBarColorTintValue.Green = 7
-StatusBarColorTintValue.Blue = 8
+Enums.StatusBarColorTintValue = {
+	["None"] = 0
+	["Black"] = 1
+	["White"] = 2
+	["Red"] = 3
+	["Yellow"] = 4
+	["Orange"] = 5
+	["Purple"] = 6
+	["Green"] = 7
+	["Blue"] = 8
+}
 
----@class StatusBarOverrideBarTextShownType
-local StatusBarOverrideBarTextShownType = {}
-StatusBarOverrideBarTextShownType.Never = 0
-StatusBarOverrideBarTextShownType.Always = 1
-StatusBarOverrideBarTextShownType.OnlyOnMouseover = 2
-StatusBarOverrideBarTextShownType.OnlyNotOnMouseover = 3
+Enums.StatusBarOverrideBarTextShownType = {
+	["Never"] = 0
+	["Always"] = 1
+	["OnlyOnMouseover"] = 2
+	["OnlyNotOnMouseover"] = 3
+}
 
----@class StatusBarValueTextType
-local StatusBarValueTextType = {}
-StatusBarValueTextType.Hidden = 0
-StatusBarValueTextType.Percentage = 1
-StatusBarValueTextType.Value = 2
-StatusBarValueTextType.Time = 3
-StatusBarValueTextType.TimeShowOneLevelOnly = 4
-StatusBarValueTextType.ValueOverMax = 5
-StatusBarValueTextType.ValueOverMaxNormalized = 6
+Enums.StatusBarValueTextType = {
+	["Hidden"] = 0
+	["Percentage"] = 1
+	["Value"] = 2
+	["Time"] = 3
+	["TimeShowOneLevelOnly"] = 4
+	["ValueOverMax"] = 5
+	["ValueOverMaxNormalized"] = 6
+}
 
----@class UIWidgetFlag
-local UIWidgetFlag = {}
-UIWidgetFlag.UniversalWidget = 1
+Enums.UIWidgetFlag = {
+	["UniversalWidget"] = 1
+}
 
----@class UIWidgetFontType
-local UIWidgetFontType = {}
-UIWidgetFontType.Normal = 0
-UIWidgetFontType.Shadow = 1
-UIWidgetFontType.Outline = 2
+Enums.UIWidgetFontType = {
+	["Normal"] = 0
+	["Shadow"] = 1
+	["Outline"] = 2
+}
 
----@class UIWidgetTextSizeType
-local UIWidgetTextSizeType = {}
-UIWidgetTextSizeType.Small = 0
-UIWidgetTextSizeType.Medium = 1
-UIWidgetTextSizeType.Large = 2
-UIWidgetTextSizeType.Huge = 3
+Enums.UIWidgetTextSizeType = {
+	["Small"] = 0
+	["Medium"] = 1
+	["Large"] = 2
+	["Huge"] = 3
+}
 
----@class WidgetAnimationType
-local WidgetAnimationType = {}
-WidgetAnimationType.None = 0
-WidgetAnimationType.Fade = 1
+Enums.WidgetAnimationType = {
+	["None"] = 0
+	["Fade"] = 1
+}
 
----@class WidgetCurrencyClass
-local WidgetCurrencyClass = {}
-WidgetCurrencyClass.Currency = 0
-WidgetCurrencyClass.Item = 1
+Enums.WidgetCurrencyClass = {
+	["Currency"] = 0
+	["Item"] = 1
+}
 
----@class WidgetEnabledState
-local WidgetEnabledState = {}
-WidgetEnabledState.Disabled = 0
-WidgetEnabledState.Enabled = 1
-WidgetEnabledState.Red = 2
-WidgetEnabledState.Highlight = 3
+Enums.WidgetEnabledState = {
+	["Disabled"] = 0
+	["Enabled"] = 1
+	["Red"] = 2
+	["Highlight"] = 3
+}
 
----@class WidgetShownState
-local WidgetShownState = {}
-WidgetShownState.Hidden = 0
-WidgetShownState.Shown = 1
+Enums.WidgetShownState = {
+	["Hidden"] = 0
+	["Shown"] = 1
+}
 
----@class ZoneControlActiveState
-local ZoneControlActiveState = {}
-ZoneControlActiveState.Inactive = 0
-ZoneControlActiveState.Active = 1
+Enums.ZoneControlActiveState = {
+	["Inactive"] = 0
+	["Active"] = 1
+}
 
----@class ZoneControlDangerFlashType
-local ZoneControlDangerFlashType = {}
-ZoneControlDangerFlashType.ShowOnGoodStates = 0
-ZoneControlDangerFlashType.ShowOnBadStates = 1
-ZoneControlDangerFlashType.ShowOnBoth = 2
-ZoneControlDangerFlashType.ShowOnNeither = 3
+Enums.ZoneControlDangerFlashType = {
+	["ShowOnGoodStates"] = 0
+	["ShowOnBadStates"] = 1
+	["ShowOnBoth"] = 2
+	["ShowOnNeither"] = 3
+}
 
----@class ZoneControlFillType
-local ZoneControlFillType = {}
-ZoneControlFillType.SingleFillClockwise = 0
-ZoneControlFillType.SingleFillCounterClockwise = 1
-ZoneControlFillType.DoubleFillClockwise = 2
-ZoneControlFillType.DoubleFillCounterClockwise = 3
+Enums.ZoneControlFillType = {
+	["SingleFillClockwise"] = 0
+	["SingleFillCounterClockwise"] = 1
+	["DoubleFillClockwise"] = 2
+	["DoubleFillCounterClockwise"] = 3
+}
 
----@class ZoneControlLeadingEdgeType
-local ZoneControlLeadingEdgeType = {}
-ZoneControlLeadingEdgeType.NoLeadingEdge = 0
-ZoneControlLeadingEdgeType.UseLeadingEdge = 1
+Enums.ZoneControlLeadingEdgeType = {
+	["NoLeadingEdge"] = 0
+	["UseLeadingEdge"] = 1
+}
 
----@class ZoneControlMode
-local ZoneControlMode = {}
-ZoneControlMode.BothStatesAreGood = 0
-ZoneControlMode.State1IsGood = 1
-ZoneControlMode.State2IsGood = 2
-ZoneControlMode.NeitherStateIsGood = 3
+Enums.ZoneControlMode = {
+	["BothStatesAreGood"] = 0
+	["State1IsGood"] = 1
+	["State2IsGood"] = 2
+	["NeitherStateIsGood"] = 3
+}
 
----@class ZoneControlState
-local ZoneControlState = {}
-ZoneControlState.State1 = 0
-ZoneControlState.State2 = 1
+Enums.ZoneControlState = {
+	["State1"] = 0
+	["State2"] = 1
+}
 
 ---@class BulletTextListWidgetVisualizationInfo
 ---@field shownState WidgetShownState 

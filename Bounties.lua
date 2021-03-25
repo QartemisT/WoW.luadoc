@@ -13,14 +13,14 @@ function C_Bounties.GetBountyInfo(bountyID) end
 ---@return MapOverlayDisplayLocation, number, number displayLocation, lockQuestID, bountySetID
 function C_Bounties.GetBountySetInfoForMapID(uiMapID) end
 
----@class MapOverlayDisplayLocation
-local MapOverlayDisplayLocation = {}
-MapOverlayDisplayLocation.Default = 0
-MapOverlayDisplayLocation.BottomLeft = 1
-MapOverlayDisplayLocation.TopLeft = 2
-MapOverlayDisplayLocation.BottomRight = 3
-MapOverlayDisplayLocation.TopRight = 4
-MapOverlayDisplayLocation.Hidden = 5
+Enums.MapOverlayDisplayLocation = {
+	["Default"] = 0
+	["BottomLeft"] = 1
+	["TopLeft"] = 2
+	["BottomRight"] = 3
+	["TopRight"] = 4
+	["Hidden"] = 5
+}
 
 ---@class BountyInfo
 ---@field questID number 

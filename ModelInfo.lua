@@ -35,39 +35,39 @@ function C_ModelInfo.GetModelSceneCameraInfoByID(modelSceneCameraID) end
 ---@return ModelSceneType, number, number modelSceneType, modelCameraIDs, modelActorsIDs
 function C_ModelInfo.GetModelSceneInfoByID(modelSceneID) end
 
----@class ItemTryOnReason
-local ItemTryOnReason = {}
-ItemTryOnReason.Success = 0
-ItemTryOnReason.WrongRace = 1
-ItemTryOnReason.NotEquippable = 2
-ItemTryOnReason.DataPending = 3
+Enums.ItemTryOnReason = {
+	["Success"] = 0
+	["WrongRace"] = 1
+	["NotEquippable"] = 2
+	["DataPending"] = 3
+}
 
----@class ModelSceneSetting
-local ModelSceneSetting = {}
-ModelSceneSetting.AlignLightToOrbitDelta = 1
+Enums.ModelSceneSetting = {
+	["AlignLightToOrbitDelta"] = 1
+}
 
----@class ModelSceneType
-local ModelSceneType = {}
-ModelSceneType.MountJournal = 0
-ModelSceneType.PetJournalCard = 1
-ModelSceneType.ShopCard = 2
-ModelSceneType.EncounterJournal = 3
-ModelSceneType.PetJournalLoadout = 4
-ModelSceneType.ArtifactTier2 = 5
-ModelSceneType.ArtifactTier2ForgingScene = 6
-ModelSceneType.ArtifactTier2SlamEffect = 7
-ModelSceneType.CommentatorVictoryFanfare = 8
-ModelSceneType.ArtifactRelicTalentEffect = 9
-ModelSceneType.PvPWarModeOrb = 10
-ModelSceneType.PvPWarModeFire = 11
-ModelSceneType.PartyPose = 12
-ModelSceneType.AzeriteItemLevelUpToast = 13
-ModelSceneType.AzeritePowers = 14
-ModelSceneType.AzeriteRewardGlow = 15
-ModelSceneType.HeartOfAzeroth = 16
-ModelSceneType.WorldMapThreat = 17
-ModelSceneType.Soulbinds = 18
-ModelSceneType.JailersTowerAnimaGlow = 19
+Enums.ModelSceneType = {
+	["MountJournal"] = 0
+	["PetJournalCard"] = 1
+	["ShopCard"] = 2
+	["EncounterJournal"] = 3
+	["PetJournalLoadout"] = 4
+	["ArtifactTier2"] = 5
+	["ArtifactTier2ForgingScene"] = 6
+	["ArtifactTier2SlamEffect"] = 7
+	["CommentatorVictoryFanfare"] = 8
+	["ArtifactRelicTalentEffect"] = 9
+	["PvPWarModeOrb"] = 10
+	["PvPWarModeFire"] = 11
+	["PartyPose"] = 12
+	["AzeriteItemLevelUpToast"] = 13
+	["AzeritePowers"] = 14
+	["AzeriteRewardGlow"] = 15
+	["HeartOfAzeroth"] = 16
+	["WorldMapThreat"] = 17
+	["Soulbinds"] = 18
+	["JailersTowerAnimaGlow"] = 19
+}
 
 ---@class UIModelSceneActorDisplayInfo
 ---@field animation number 

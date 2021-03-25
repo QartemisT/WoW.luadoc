@@ -72,12 +72,12 @@ function C_AzeriteEssence.SetPendingActivationEssence(essenceID) end
 ---@param milestoneID number 
 function C_AzeriteEssence.UnlockMilestone(milestoneID) end
 
----@class AzeriteEssence
-local AzeriteEssence = {}
-AzeriteEssence.MainSlot = 0
-AzeriteEssence.PassiveOneSlot = 1
-AzeriteEssence.PassiveTwoSlot = 2
-AzeriteEssence.PassiveThreeSlot = 3
+Enums.AzeriteEssence = {
+	["MainSlot"] = 0
+	["PassiveOneSlot"] = 1
+	["PassiveTwoSlot"] = 2
+	["PassiveThreeSlot"] = 3
+}
 
 ---@class AzeriteEssenceInfo
 ---@field ID number 

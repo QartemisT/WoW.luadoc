@@ -51,24 +51,24 @@ function C_EncounterJournal.SetPreviewPvpTier(tier) end
 ---@param filterSlot ItemSlotFilterType 
 function C_EncounterJournal.SetSlotFilter(filterSlot) end
 
----@class ItemSlotFilterType
-local ItemSlotFilterType = {}
-ItemSlotFilterType.Head = 0
-ItemSlotFilterType.Neck = 1
-ItemSlotFilterType.Shoulder = 2
-ItemSlotFilterType.Cloak = 3
-ItemSlotFilterType.Chest = 4
-ItemSlotFilterType.Wrist = 5
-ItemSlotFilterType.Hand = 6
-ItemSlotFilterType.Waist = 7
-ItemSlotFilterType.Legs = 8
-ItemSlotFilterType.Feet = 9
-ItemSlotFilterType.MainHand = 10
-ItemSlotFilterType.OffHand = 11
-ItemSlotFilterType.Finger = 12
-ItemSlotFilterType.Trinket = 13
-ItemSlotFilterType.Other = 14
-ItemSlotFilterType.NoFilter = 15
+Enums.ItemSlotFilterType = {
+	["Head"] = 0
+	["Neck"] = 1
+	["Shoulder"] = 2
+	["Cloak"] = 3
+	["Chest"] = 4
+	["Wrist"] = 5
+	["Hand"] = 6
+	["Waist"] = 7
+	["Legs"] = 8
+	["Feet"] = 9
+	["MainHand"] = 10
+	["OffHand"] = 11
+	["Finger"] = 12
+	["Trinket"] = 13
+	["Other"] = 14
+	["NoFilter"] = 15
+}
 
 ---@class DungeonEntranceMapInfo
 ---@field areaPoiID number 

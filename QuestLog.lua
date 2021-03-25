@@ -297,45 +297,45 @@ function C_QuestLog.ShouldShowQuestRewards(questID) end
 
 function C_QuestLog.SortQuestWatches() end
 
----@class MapOverlayDisplayLocation
-local MapOverlayDisplayLocation = {}
-MapOverlayDisplayLocation.Default = 0
-MapOverlayDisplayLocation.BottomLeft = 1
-MapOverlayDisplayLocation.TopLeft = 2
-MapOverlayDisplayLocation.BottomRight = 3
-MapOverlayDisplayLocation.TopRight = 4
-MapOverlayDisplayLocation.Hidden = 5
+Enums.MapOverlayDisplayLocation = {
+	["Default"] = 0
+	["BottomLeft"] = 1
+	["TopLeft"] = 2
+	["BottomRight"] = 3
+	["TopRight"] = 4
+	["Hidden"] = 5
+}
 
----@class QuestFrequency
-local QuestFrequency = {}
-QuestFrequency.Default = 0
-QuestFrequency.Daily = 1
-QuestFrequency.Weekly = 2
+Enums.QuestFrequency = {
+	["Default"] = 0
+	["Daily"] = 1
+	["Weekly"] = 2
+}
 
----@class QuestTag
-local QuestTag = {}
-QuestTag.Group = 1
-QuestTag.PvP = 41
-QuestTag.Raid = 62
-QuestTag.Dungeon = 81
-QuestTag.Legendary = 83
-QuestTag.Heroic = 85
-QuestTag.Raid10 = 88
-QuestTag.Raid25 = 89
-QuestTag.Scenario = 98
-QuestTag.Account = 102
-QuestTag.CombatAlly = 266
+Enums.QuestTag = {
+	["Group"] = 1
+	["PvP"] = 41
+	["Raid"] = 62
+	["Dungeon"] = 81
+	["Legendary"] = 83
+	["Heroic"] = 85
+	["Raid10"] = 88
+	["Raid25"] = 89
+	["Scenario"] = 98
+	["Account"] = 102
+	["CombatAlly"] = 266
+}
 
----@class QuestWatchType
-local QuestWatchType = {}
-QuestWatchType.Automatic = 0
-QuestWatchType.Manual = 1
+Enums.QuestWatchType = {
+	["Automatic"] = 0
+	["Manual"] = 1
+}
 
----@class WorldQuestQuality
-local WorldQuestQuality = {}
-WorldQuestQuality.Common = 0
-WorldQuestQuality.Rare = 1
-WorldQuestQuality.Epic = 2
+Enums.WorldQuestQuality = {
+	["Common"] = 0
+	["Rare"] = 1
+	["Epic"] = 2
+}
 
 ---@class QuestInfo
 ---@field title string 

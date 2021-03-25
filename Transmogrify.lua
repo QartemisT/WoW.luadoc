@@ -40,58 +40,58 @@ function C_Transmog.GetSlotVisualInfo(transmogLocation) end
 ---@overload fun(transmogLocation:table, transmogID:number)
 function C_Transmog.SetPending(transmogLocation, transmogID, categoryID) end
 
----@class TransmogCollectionType
-local TransmogCollectionType = {}
-TransmogCollectionType.Head = 0
-TransmogCollectionType.Shoulder = 1
-TransmogCollectionType.Back = 2
-TransmogCollectionType.Chest = 3
-TransmogCollectionType.Shirt = 4
-TransmogCollectionType.Tabard = 5
-TransmogCollectionType.Wrist = 6
-TransmogCollectionType.Hands = 7
-TransmogCollectionType.Waist = 8
-TransmogCollectionType.Legs = 9
-TransmogCollectionType.Feet = 10
-TransmogCollectionType.Wand = 11
-TransmogCollectionType.OneHAxe = 12
-TransmogCollectionType.OneHSword = 13
-TransmogCollectionType.OneHMace = 14
-TransmogCollectionType.Dagger = 15
-TransmogCollectionType.Fist = 16
-TransmogCollectionType.Shield = 17
-TransmogCollectionType.Holdable = 18
-TransmogCollectionType.TwoHAxe = 19
-TransmogCollectionType.TwoHSword = 20
-TransmogCollectionType.TwoHMace = 21
-TransmogCollectionType.Staff = 22
-TransmogCollectionType.Polearm = 23
-TransmogCollectionType.Bow = 24
-TransmogCollectionType.Gun = 25
-TransmogCollectionType.Crossbow = 26
-TransmogCollectionType.Warglaives = 27
-TransmogCollectionType.Paired = 28
+Enums.TransmogCollectionType = {
+	["Head"] = 0
+	["Shoulder"] = 1
+	["Back"] = 2
+	["Chest"] = 3
+	["Shirt"] = 4
+	["Tabard"] = 5
+	["Wrist"] = 6
+	["Hands"] = 7
+	["Waist"] = 8
+	["Legs"] = 9
+	["Feet"] = 10
+	["Wand"] = 11
+	["OneHAxe"] = 12
+	["OneHSword"] = 13
+	["OneHMace"] = 14
+	["Dagger"] = 15
+	["Fist"] = 16
+	["Shield"] = 17
+	["Holdable"] = 18
+	["TwoHAxe"] = 19
+	["TwoHSword"] = 20
+	["TwoHMace"] = 21
+	["Staff"] = 22
+	["Polearm"] = 23
+	["Bow"] = 24
+	["Gun"] = 25
+	["Crossbow"] = 26
+	["Warglaives"] = 27
+	["Paired"] = 28
+}
 
----@class TransmogModification
-local TransmogModification = {}
-TransmogModification.None = 0
-TransmogModification.RightShoulder = 1
+Enums.TransmogModification = {
+	["None"] = 0
+	["RightShoulder"] = 1
+}
 
----@class TransmogSource
-local TransmogSource = {}
-TransmogSource.None = 0
-TransmogSource.JournalEncounter = 1
-TransmogSource.Quest = 2
-TransmogSource.Vendor = 3
-TransmogSource.WorldDrop = 4
-TransmogSource.HiddenUntilCollected = 5
-TransmogSource.CantCollect = 6
-TransmogSource.Achievement = 7
-TransmogSource.Profession = 8
-TransmogSource.NotValidForTransmog = 9
+Enums.TransmogSource = {
+	["None"] = 0
+	["JournalEncounter"] = 1
+	["Quest"] = 2
+	["Vendor"] = 3
+	["WorldDrop"] = 4
+	["HiddenUntilCollected"] = 5
+	["CantCollect"] = 6
+	["Achievement"] = 7
+	["Profession"] = 8
+	["NotValidForTransmog"] = 9
+}
 
----@class TransmogType
-local TransmogType = {}
-TransmogType.Appearance = 0
-TransmogType.Illusion = 1
+Enums.TransmogType = {
+	["Appearance"] = 0
+	["Illusion"] = 1
+}
 

@@ -62,17 +62,17 @@ function IsVeteranTrialAccount() end
 ---@param response SubscriptionInterstitialResponseType 
 function SendSubscriptionInterstitialResponse(response) end
 
----@class SubscriptionInterstitialResponseType
-local SubscriptionInterstitialResponseType = {}
-SubscriptionInterstitialResponseType.Clicked = 0
-SubscriptionInterstitialResponseType.Closed = 1
-SubscriptionInterstitialResponseType.WebRedirect = 2
+Enums.SubscriptionInterstitialResponseType = {
+	["Clicked"] = 0
+	["Closed"] = 1
+	["WebRedirect"] = 2
+}
 
----@class SubscriptionInterstitialType
-local SubscriptionInterstitialType = {}
-SubscriptionInterstitialType.Standard = 0
-SubscriptionInterstitialType.LeftNpeArea = 1
-SubscriptionInterstitialType.MaxLevel = 2
+Enums.SubscriptionInterstitialType = {
+	["Standard"] = 0
+	["LeftNpeArea"] = 1
+	["MaxLevel"] = 2
+}
 
 ---@class ExpansionDisplayInfo
 ---@field logo number 

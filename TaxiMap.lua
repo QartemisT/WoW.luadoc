@@ -15,17 +15,17 @@ function C_TaxiMap.GetTaxiNodesForMap(uiMapID) end
 ---@return bool shouldShowNodes
 function C_TaxiMap.ShouldMapShowTaxiNodes(uiMapID) end
 
----@class FlightPathFaction
-local FlightPathFaction = {}
-FlightPathFaction.Neutral = 0
-FlightPathFaction.Horde = 1
-FlightPathFaction.Alliance = 2
+Enums.FlightPathFaction = {
+	["Neutral"] = 0
+	["Horde"] = 1
+	["Alliance"] = 2
+}
 
----@class FlightPathState
-local FlightPathState = {}
-FlightPathState.Current = 0
-FlightPathState.Reachable = 1
-FlightPathState.Unreachable = 2
+Enums.FlightPathState = {
+	["Current"] = 0
+	["Reachable"] = 1
+	["Unreachable"] = 2
+}
 
 ---@class MapTaxiNodeInfo
 ---@field nodeID number 

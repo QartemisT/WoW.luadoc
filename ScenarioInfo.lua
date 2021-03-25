@@ -5,18 +5,18 @@ C_ScenarioInfo = {}
 ---@return string|nil typeString
 function C_ScenarioInfo.GetJailersTowerTypeString(runType) end
 
----@class JailersTowerType
-local JailersTowerType = {}
-JailersTowerType.TwistingCorridors = 0
-JailersTowerType.SkoldusHalls = 1
-JailersTowerType.FractureChambers = 2
-JailersTowerType.Soulforges = 3
-JailersTowerType.Coldheart = 4
-JailersTowerType.Mortregar = 5
-JailersTowerType.UpperReaches = 6
-JailersTowerType.ArkobanHall = 7
-JailersTowerType.TormentChamberJaina = 8
-JailersTowerType.TormentChamberThrall = 9
-JailersTowerType.TormentChamberAnduin = 10
-JailersTowerType.AdamantVaults = 11
+Enums.JailersTowerType = {
+	["TwistingCorridors"] = 0
+	["SkoldusHalls"] = 1
+	["FractureChambers"] = 2
+	["Soulforges"] = 3
+	["Coldheart"] = 4
+	["Mortregar"] = 5
+	["UpperReaches"] = 6
+	["ArkobanHall"] = 7
+	["TormentChamberJaina"] = 8
+	["TormentChamberThrall"] = 9
+	["TormentChamberAnduin"] = 10
+	["AdamantVaults"] = 11
+}
 

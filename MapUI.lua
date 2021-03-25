@@ -153,50 +153,50 @@ function C_Map.RequestPreloadMap(uiMapID) end
 ---@param point table 
 function C_Map.SetUserWaypoint(point) end
 
----@class MapCanvasPosition
-local MapCanvasPosition = {}
-MapCanvasPosition.None = 0
-MapCanvasPosition.BottomLeft = 1
-MapCanvasPosition.BottomRight = 2
-MapCanvasPosition.TopLeft = 3
-MapCanvasPosition.TopRight = 4
+Enums.MapCanvasPosition = {
+	["None"] = 0
+	["BottomLeft"] = 1
+	["BottomRight"] = 2
+	["TopLeft"] = 3
+	["TopRight"] = 4
+}
 
----@class UIMapFlag
-local UIMapFlag = {}
-UIMapFlag.NoHighlight = 1
-UIMapFlag.ShowOverlays = 2
-UIMapFlag.ShowTaxiNodes = 4
-UIMapFlag.GarrisonMap = 8
-UIMapFlag.FallbackToParentMap = 16
-UIMapFlag.NoHighlightTexture = 32
-UIMapFlag.ShowTaskObjectives = 64
-UIMapFlag.NoWorldPositions = 128
-UIMapFlag.HideArchaeologyDigs = 256
-UIMapFlag.Deprecated = 512
-UIMapFlag.HideIcons = 1024
-UIMapFlag.HideVignettes = 2048
-UIMapFlag.ForceAllOverlayExplored = 4096
-UIMapFlag.FlightMapShowZoomOut = 8192
-UIMapFlag.FlightMapAutoZoom = 16384
-UIMapFlag.ForceOnNavbar = 32768
-UIMapFlag.AlwaysAllowUserWaypoints = 65536
+Enums.UIMapFlag = {
+	["NoHighlight"] = 1
+	["ShowOverlays"] = 2
+	["ShowTaxiNodes"] = 4
+	["GarrisonMap"] = 8
+	["FallbackToParentMap"] = 16
+	["NoHighlightTexture"] = 32
+	["ShowTaskObjectives"] = 64
+	["NoWorldPositions"] = 128
+	["HideArchaeologyDigs"] = 256
+	["Deprecated"] = 512
+	["HideIcons"] = 1024
+	["HideVignettes"] = 2048
+	["ForceAllOverlayExplored"] = 4096
+	["FlightMapShowZoomOut"] = 8192
+	["FlightMapAutoZoom"] = 16384
+	["ForceOnNavbar"] = 32768
+	["AlwaysAllowUserWaypoints"] = 65536
+}
 
----@class UIMapSystem
-local UIMapSystem = {}
-UIMapSystem.World = 0
-UIMapSystem.Taxi = 1
-UIMapSystem.Adventure = 2
-UIMapSystem.Minimap = 3
+Enums.UIMapSystem = {
+	["World"] = 0
+	["Taxi"] = 1
+	["Adventure"] = 2
+	["Minimap"] = 3
+}
 
----@class UIMapType
-local UIMapType = {}
-UIMapType.Cosmic = 0
-UIMapType.World = 1
-UIMapType.Continent = 2
-UIMapType.Zone = 3
-UIMapType.Dungeon = 4
-UIMapType.Micro = 5
-UIMapType.Orphan = 6
+Enums.UIMapType = {
+	["Cosmic"] = 0
+	["World"] = 1
+	["Continent"] = 2
+	["Zone"] = 3
+	["Dungeon"] = 4
+	["Micro"] = 5
+	["Orphan"] = 6
+}
 
 ---@class MapBannerInfo
 ---@field areaPoiID number 

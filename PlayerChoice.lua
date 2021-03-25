@@ -15,12 +15,12 @@ function C_PlayerChoice.GetPlayerChoiceRewardInfo(rewardIndex) end
 ---@return bool isWaitingForResponse
 function C_PlayerChoice.IsWaitingForPlayerChoiceResponse() end
 
----@class PlayerChoiceRarity
-local PlayerChoiceRarity = {}
-PlayerChoiceRarity.Common = 0
-PlayerChoiceRarity.Uncommon = 1
-PlayerChoiceRarity.Rare = 2
-PlayerChoiceRarity.Epic = 3
+Enums.PlayerChoiceRarity = {
+	["Common"] = 0
+	["Uncommon"] = 1
+	["Rare"] = 2
+	["Epic"] = 3
+}
 
 ---@class PlayerChoiceInfo
 ---@field choiceID number 

@@ -70,28 +70,28 @@ function C_ContributionCollector.HasPendingContribution(contributionID) end
 ---@return bool awaitingData
 function C_ContributionCollector.IsAwaitingRewardQuestData(contributionID) end
 
----@class ContributionAppearanceFlags
-local ContributionAppearanceFlags = {}
-ContributionAppearanceFlags.TooltipUseTimeRemaining = 0
+Enums.ContributionAppearanceFlags = {
+	["TooltipUseTimeRemaining"] = 0
+}
 
----@class ContributionResult
-local ContributionResult = {}
-ContributionResult.Success = 0
-ContributionResult.MustBeNearNpc = 1
-ContributionResult.IncorrectState = 2
-ContributionResult.InvalidID = 3
-ContributionResult.QuestDataMissing = 4
-ContributionResult.FailedConditionCheck = 5
-ContributionResult.UnableToCompleteTurnIn = 6
-ContributionResult.InternalError = 7
+Enums.ContributionResult = {
+	["Success"] = 0
+	["MustBeNearNpc"] = 1
+	["IncorrectState"] = 2
+	["InvalidID"] = 3
+	["QuestDataMissing"] = 4
+	["FailedConditionCheck"] = 5
+	["UnableToCompleteTurnIn"] = 6
+	["InternalError"] = 7
+}
 
----@class ContributionState
-local ContributionState = {}
-ContributionState.None = 0
-ContributionState.Building = 1
-ContributionState.Active = 2
-ContributionState.UnderAttack = 3
-ContributionState.Destroyed = 4
+Enums.ContributionState = {
+	["None"] = 0
+	["Building"] = 1
+	["Active"] = 2
+	["UnderAttack"] = 3
+	["Destroyed"] = 4
+}
 
 ---@class ContributionAppearance
 ---@field stateName string 

@@ -219,18 +219,18 @@ function C_PvP.SetWarModeDesired(warModeDesired) end
 
 function C_PvP.ToggleWarMode() end
 
----@class BrawlType
-local BrawlType = {}
-BrawlType.None = 0
-BrawlType.Battleground = 1
-BrawlType.Arena = 2
-BrawlType.Lfg = 3
+Enums.BrawlType = {
+	["None"] = 0
+	["Battleground"] = 1
+	["Arena"] = 2
+	["Lfg"] = 3
+}
 
----@class PvPMatchState
-local PvPMatchState = {}
-PvPMatchState.Inactive = 0
-PvPMatchState.Active = 1
-PvPMatchState.Complete = 2
+Enums.PvPMatchState = {
+	["Inactive"] = 0
+	["Active"] = 1
+	["Complete"] = 2
+}
 
 ---@class BattlefieldCurrencyReward
 ---@field id number 
