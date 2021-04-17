@@ -114,6 +114,11 @@ function C_QuestLog.GetQuestIDForQuestWatchIndex(questWatchIndex) end
 ---@return number|nil questID
 function C_QuestLog.GetQuestIDForWorldQuestWatchIndex(questWatchIndex) end
 
+---@param questLogIndex number @ [OPTIONAL]
+---@overload fun()
+---@return number, string, string, number, number|nil portraitGiver, portraitGiverText, portraitGiverName, portraitGiverMount, portraitGiverModelSceneID
+function C_QuestLog.GetQuestLogPortraitGiver(questLogIndex) end
+
 ---@param questID number 
 ---@return QuestObjectiveInfo objectives
 function C_QuestLog.GetQuestObjectives(questID) end

@@ -26,11 +26,11 @@ function C_BarberShop.HasAnyChanges() end
 ---@return bool isViewingAlteredForm
 function C_BarberShop.IsViewingAlteredForm() end
 
-function C_BarberShop.OldBarberShopLoaded() end
-
 ---@param optionID number 
 ---@param choiceID number 
 function C_BarberShop.PreviewCustomizationChoice(optionID, choiceID) end
+
+function C_BarberShop.RandomizeCustomizationChoices() end
 
 function C_BarberShop.ResetCameraRotation() end
 

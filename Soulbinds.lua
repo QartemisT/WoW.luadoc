@@ -109,6 +109,10 @@ function C_Soulbinds.GetNode(nodeID) end
 ---@return SoulbindData data
 function C_Soulbinds.GetSoulbindData(soulbindID) end
 
+---@param soulbindID number 
+---@return number specIDs
+function C_Soulbinds.GetSpecsAssignedToSoulbind(soulbindID) end
+
 ---@return number count
 function C_Soulbinds.GetTotalConduitChargesPending() end
 
@@ -212,6 +216,7 @@ local SoulbindModelSceneData = {}
 ---@field conduitType SoulbindConduitType|nil 
 ---@field parentNodeIDs table 
 ---@field failureRenownRequirement number|nil 
+---@field socketEnhanced bool|nil 
 local SoulbindNode = {}
 
 ---@class SoulbindTree

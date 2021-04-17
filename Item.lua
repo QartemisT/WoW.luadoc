@@ -2,6 +2,10 @@
 C_Item = {}
 
 ---@param itemLoc table 
+---@return bool, number canTransmog, errorCode
+function C_Item.CanItemTransmogAppearance(itemLoc) end
+
+---@param itemLoc table 
 ---@return bool canBeScrapped
 function C_Item.CanScrapItem(itemLoc) end
 
@@ -20,6 +24,14 @@ function C_Item.DoesItemExistByID(itemInfo) end
 ---@param itemLoc table 
 ---@return bool matchesBonusTree
 function C_Item.DoesItemMatchBonusTreeReplacement(itemLoc) end
+
+---@param itemLoc table 
+---@return table|nil info
+function C_Item.GetAppliedItemTransmogInfo(itemLoc) end
+
+---@param itemLoc table 
+---@return table|nil info
+function C_Item.GetBaseItemTransmogInfo(itemLoc) end
 
 ---@param itemLocation table 
 ---@return number|nil currentItemLevel

@@ -49,7 +49,8 @@ Enum.ConsoleColorType = {
 Enum.ConsoleCommandType = {
 	["Cvar"] = 0
 	["Command"] = 1
-	["Script"] = 2
+	["Macro"] = 2
+	["Script"] = 3
 }
 
 ---@class ConsoleCommandInfo
@@ -58,5 +59,6 @@ Enum.ConsoleCommandType = {
 ---@field category ConsoleCategory 
 ---@field commandType ConsoleCommandType 
 ---@field scriptContents string 
+---@field scriptParameters string 
 local ConsoleCommandInfo = {}
 

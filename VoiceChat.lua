@@ -4,6 +4,9 @@ C_VoiceChat = {}
 ---@param channelID number 
 function C_VoiceChat.ActivateChannel(channelID) end
 
+---@param channelID number 
+function C_VoiceChat.ActivateChannelTranscription(channelID) end
+
 ---@param listenToLocalUser bool 
 function C_VoiceChat.BeginLocalCapture(listenToLocalUser) end
 
@@ -16,6 +19,9 @@ function C_VoiceChat.CreateChannel(channelDisplayName) end
 
 ---@param channelID number 
 function C_VoiceChat.DeactivateChannel(channelID) end
+
+---@param channelID number 
+function C_VoiceChat.DeactivateChannelTranscription(channelID) end
 
 function C_VoiceChat.EndLocalCapture() end
 
@@ -102,6 +108,9 @@ function C_VoiceChat.GetProcesses() end
 
 ---@return string|nil keys
 function C_VoiceChat.GetPushToTalkBinding() end
+
+---@return VoiceTtsVoiceType|nil ttsVoices
+function C_VoiceChat.GetTtsVoices() end
 
 ---@return number|nil sensitivity
 function C_VoiceChat.GetVADSensitivity() end
@@ -227,6 +236,13 @@ function C_VoiceChat.SetVADSensitivity(sensitivity) end
 ---@return bool shouldDiscoverChannels
 function C_VoiceChat.ShouldDiscoverChannels() end
 
+---@param voiceID number 
+---@param text string 
+---@param destination VoiceTtsDestination 
+---@param rate number 
+---@param volume number 
+function C_VoiceChat.SpeakText(voiceID, text, destination, rate, volume) end
+
 function C_VoiceChat.ToggleDeafened() end
 
 ---@param playerLocation table 
@@ -272,12 +288,39 @@ Enum.VoiceChatStatusCode = {
 	["InvalidOutputDevice"] = 24
 }
 
+Enum.VoiceTtsDestination = {
+	["RemoteTransmission"] = 0
+	["LocalPlayback"] = 1
+	["RemoteTransmissionWithLocalPlayback"] = 2
+	["QueuedRemoteTransmission"] = 3
+	["QueuedLocalPlayback"] = 4
+	["QueuedRemoteTransmissionWithLocalPlayback"] = 5
+	["ScreenReader"] = 6
+}
+
+Enum.VoiceTtsStatusCode = {
+	["Success"] = 0
+	["InvalidEngineType"] = 1
+	["EngineAllocationFailed"] = 2
+	["NotSupported"] = 3
+	["MaxCharactersExceeded"] = 4
+	["UtteranceBelowMinimumDuration"] = 5
+	["InputTextEnqueued"] = 6
+	["SdkNotInitialized"] = 7
+	["DestinationQueueFull"] = 8
+	["EnqueueNotNecessary"] = 9
+	["UtteranceNotFound"] = 10
+	["ManagerNotFound"] = 11
+	["InvalidArgument"] = 12
+	["InternalError"] = 13
+}
+
 ---@class VoiceAudioDevice
 ---@field deviceID string 
 ---@field displayName string 
----@field power number 
 ---@field isActive bool 
 ---@field isSystemDefault bool 
+---@field isCommsDefault bool 
 local VoiceAudioDevice = {}
 
 ---@class VoiceChatChannel
@@ -290,7 +333,7 @@ local VoiceAudioDevice = {}
 ---@field isActive bool 
 ---@field isMuted bool 
 ---@field isTransmitting bool 
----@field isLocalProcess bool 
+---@field isTranscribing bool 
 ---@field members table 
 local VoiceChatChannel = {}
 
@@ -307,4 +350,9 @@ local VoiceChatMember = {}
 ---@field name string 
 ---@field channels table 
 local VoiceChatProcess = {}
+
+---@class VoiceTtsVoiceType
+---@field voiceID number 
+---@field name string 
+local VoiceTtsVoiceType = {}
 

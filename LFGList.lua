@@ -91,6 +91,7 @@ local LfgEntryData = {}
 ---@field numGuildMates number 
 ---@field isDelisted bool 
 ---@field autoAccept bool 
+---@field isWarMode bool 
 ---@field age number 
 ---@field questID number|nil 
 local LfgSearchResultData = {}

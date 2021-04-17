@@ -1,13 +1,17 @@
 ---@class Transmogrify
 C_Transmog = {}
 
+---@param slotID number 
+---@return bool canHaveSecondaryAppearance
+function C_Transmog.CanHaveSecondaryAppearanceForSlotID(slotID) end
+
 function C_Transmog.ClearAllPending() end
 
 ---@param transmogLocation table 
 function C_Transmog.ClearPending(transmogLocation) end
 
 ---@param transmogID number 
----@return number categoryID
+---@return TransmogCollectionType categoryID
 function C_Transmog.GetBaseCategory(transmogID) end
 
 ---@param itemModifiedAppearanceID number 
@@ -17,6 +21,14 @@ function C_Transmog.GetCreatureDisplayIDForSource(itemModifiedAppearanceID) end
 ---@param itemModifiedAppearanceID number 
 ---@return number|nil itemID
 function C_Transmog.GetItemIDForSource(itemModifiedAppearanceID) end
+
+---@param transmogLocation table 
+---@return table pendingInfo
+function C_Transmog.GetPending(transmogLocation) end
+
+---@param transmogLocation table 
+---@return TransmogCollectionType categoryID
+function C_Transmog.GetSlotEffectiveCategory(transmogLocation) end
 
 ---@param inventoryType number 
 ---@return number slot
@@ -31,50 +43,31 @@ function C_Transmog.GetSlotInfo(transmogLocation) end
 function C_Transmog.GetSlotUseError(transmogLocation) end
 
 ---@param transmogLocation table 
----@return number, number, number, number, number, number, number, number, bool, bool, number baseSourceID, baseVisualID, appliedSourceID, appliedVisualID, appliedCategoryID, pendingSourceID, pendingVisualID, pendingCategoryID, hasUndo, isHideVisual, itemSubclass
+---@return number, number, number, number, number, number, bool, bool, number baseSourceID, baseVisualID, appliedSourceID, appliedVisualID, pendingSourceID, pendingVisualID, hasUndo, isHideVisual, itemSubclass
 function C_Transmog.GetSlotVisualInfo(transmogLocation) end
 
----@param transmogLocation table 
----@param transmogID number 
----@param categoryID number @ [OPTIONAL]
----@overload fun(transmogLocation:table, transmogID:number)
-function C_Transmog.SetPending(transmogLocation, transmogID, categoryID) end
+---@return bool isAtNPC
+function C_Transmog.IsAtTransmogNPC() end
 
-Enum.TransmogCollectionType = {
-	["Head"] = 0
-	["Shoulder"] = 1
-	["Back"] = 2
-	["Chest"] = 3
-	["Shirt"] = 4
-	["Tabard"] = 5
-	["Wrist"] = 6
-	["Hands"] = 7
-	["Waist"] = 8
-	["Legs"] = 9
-	["Feet"] = 10
-	["Wand"] = 11
-	["OneHAxe"] = 12
-	["OneHSword"] = 13
-	["OneHMace"] = 14
-	["Dagger"] = 15
-	["Fist"] = 16
-	["Shield"] = 17
-	["Holdable"] = 18
-	["TwoHAxe"] = 19
-	["TwoHSword"] = 20
-	["TwoHMace"] = 21
-	["Staff"] = 22
-	["Polearm"] = 23
-	["Bow"] = 24
-	["Gun"] = 25
-	["Crossbow"] = 26
-	["Warglaives"] = 27
-	["Paired"] = 28
-}
+--- Returns true if the only pending for the location's slot is a ToggleOff for the secondary appearance.
+---@param transmogLocation table 
+---@return bool isBeingCollapsed
+function C_Transmog.IsSlotBeingCollapsed(transmogLocation) end
+
+---@param transmogLocation table 
+---@param pendingInfo table 
+function C_Transmog.SetPending(transmogLocation, pendingInfo) end
 
 Enum.TransmogModification = {
-	["None"] = 0
-	["RightShoulder"] = 1
+	["Main"] = 0
+	["Secondary"] = 1
+}
+
+Enum.TransmogPendingType = {
+	["Apply"] = 0
+	["Revert"] = 1
+	["ToggleOn"] = 2
+	["ToggleOff"] = 3
 }
 
 Enum.TransmogSource = {
