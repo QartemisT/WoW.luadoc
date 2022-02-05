@@ -128,6 +128,10 @@ function C_QuestLog.GetQuestObjectives(questID) end
 function C_QuestLog.GetQuestTagInfo(questID) end
 
 ---@param questID number 
+---@return number|nil questType
+function C_QuestLog.GetQuestType(questID) end
+
+---@param questID number 
 ---@return QuestWatchType|nil watchType
 function C_QuestLog.GetQuestWatchType(questID) end
 
@@ -396,5 +400,6 @@ local QuestTagInfo = {}
 ---@field background string 
 ---@field seal string 
 ---@field signature string 
+---@field poiIcon string 
 local QuestTheme = {}
 

@@ -4,10 +4,18 @@ C_PlayerChoice = {}
 ---@return PlayerChoiceInfo choiceInfo
 function C_PlayerChoice.GetCurrentPlayerChoiceInfo() end
 
+---@return number numRerolls
+function C_PlayerChoice.GetNumRerolls() end
+
+---@return number|nil remainingTime
+function C_PlayerChoice.GetRemainingTime() end
+
 ---@return bool isWaitingForResponse
 function C_PlayerChoice.IsWaitingForPlayerChoiceResponse() end
 
 function C_PlayerChoice.OnUIClosed() end
+
+function C_PlayerChoice.RequestRerollPlayerChoice() end
 
 ---@param responseID number 
 function C_PlayerChoice.SendPlayerChoiceResponse(responseID) end
@@ -20,13 +28,16 @@ Enum.PlayerChoiceRarity = {
 }
 
 ---@class PlayerChoiceInfo
+---@field objectGUID string 
 ---@field choiceID number 
 ---@field questionText string 
+---@field pendingChoiceText string 
 ---@field uiTextureKit string 
 ---@field hideWarboardHeader bool 
 ---@field keepOpenAfterChoice bool 
 ---@field options table 
 ---@field soundKitID number|nil 
+---@field closeUISoundKitID number|nil 
 local PlayerChoiceInfo = {}
 
 ---@class PlayerChoiceOptionButtonInfo
@@ -48,12 +59,12 @@ local PlayerChoiceOptionButtonInfo = {}
 ---@field disabledOption bool 
 ---@field hasRewards bool 
 ---@field rewardInfo PlayerChoiceOptionRewardInfo 
----@field rarity PlayerChoiceRarity 
 ---@field uiTextureKit string 
 ---@field maxStacks number 
 ---@field buttons table 
 ---@field widgetSetID number|nil 
 ---@field spellID number|nil 
+---@field rarity PlayerChoiceRarity|nil 
 ---@field rarityColor table|nil 
 ---@field typeArtID number|nil 
 ---@field headerIconAtlasElement string|nil 

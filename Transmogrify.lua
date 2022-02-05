@@ -1,14 +1,39 @@
 ---@class Transmogrify
 C_Transmog = {}
 
+---@param currentSpecOnly bool 
+---@return bool requestSent
+function C_Transmog.ApplyAllPending(currentSpecOnly) end
+
 ---@param slotID number 
 ---@return bool canHaveSecondaryAppearance
 function C_Transmog.CanHaveSecondaryAppearanceForSlotID(slotID) end
+
+---@param itemInfo string 
+---@return bool, string|nil, bool, string|nil canBeTransmogged, selfFailureReason, canTransmogOthers, othersFailureReason
+function C_Transmog.CanTransmogItem(itemInfo) end
+
+---@param targetItemInfo string 
+---@param sourceItemInfo string 
+---@return bool, string|nil canTransmog, failureReason
+function C_Transmog.CanTransmogItemWithItem(targetItemInfo, sourceItemInfo) end
 
 function C_Transmog.ClearAllPending() end
 
 ---@param transmogLocation table 
 function C_Transmog.ClearPending(transmogLocation) end
+
+function C_Transmog.Close() end
+
+---@param input string 
+---@return number transmogIDList
+function C_Transmog.ExtractTransmogIDList(input) end
+
+---@return number|nil cost
+function C_Transmog.GetApplyCost() end
+
+---@return TransmogApplyWarningInfo warnings
+function C_Transmog.GetApplyWarnings() end
 
 ---@param transmogID number 
 ---@return TransmogCollectionType categoryID
@@ -54,6 +79,9 @@ function C_Transmog.IsAtTransmogNPC() end
 ---@return bool isBeingCollapsed
 function C_Transmog.IsSlotBeingCollapsed(transmogLocation) end
 
+---@param outfitID number 
+function C_Transmog.LoadOutfit(outfitID) end
+
 ---@param transmogLocation table 
 ---@param pendingInfo table 
 function C_Transmog.SetPending(transmogLocation, pendingInfo) end
@@ -70,21 +98,13 @@ Enum.TransmogPendingType = {
 	["ToggleOff"] = 3
 }
 
-Enum.TransmogSource = {
-	["None"] = 0
-	["JournalEncounter"] = 1
-	["Quest"] = 2
-	["Vendor"] = 3
-	["WorldDrop"] = 4
-	["HiddenUntilCollected"] = 5
-	["CantCollect"] = 6
-	["Achievement"] = 7
-	["Profession"] = 8
-	["NotValidForTransmog"] = 9
-}
-
 Enum.TransmogType = {
 	["Appearance"] = 0
 	["Illusion"] = 1
 }
+
+---@class TransmogApplyWarningInfo
+---@field itemLink string 
+---@field text string 
+local TransmogApplyWarningInfo = {}
 

@@ -27,6 +27,8 @@ Enum.JailersTowerType = {
 	["TormentChamberAnduin"] = 10
 	["AdamantVaults"] = 11
 	["ForgottenCatacombs"] = 12
+	["Ossuary"] = 13
+	["BossRush"] = 14
 }
 
 ---@class ScenarioInformation

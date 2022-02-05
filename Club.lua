@@ -114,6 +114,8 @@ function C_Club.EditStream(clubId, streamId, name, subject, leadersAndModerators
 
 function C_Club.Flush() end
 
+function C_Club.FocusCommunityStreams() end
+
 ---@param clubId string 
 ---@param streamId string 
 ---@return bool focused
@@ -370,6 +372,9 @@ function C_Club.SetSocialQueueingEnabled(clubId, enabled) end
 ---@return bool clubTypeIsAllowed
 function C_Club.ShouldAllowClubType(clubType) end
 
+---@param unsubscribe bool 
+function C_Club.UnfocusAllStreams(unsubscribe) end
+
 ---@param clubId string 
 ---@param streamId string 
 function C_Club.UnfocusStream(clubId, streamId) end
@@ -598,6 +603,7 @@ local ClubLimits = {}
 ---@field guildRank string|nil 
 ---@field guildRankOrder number|nil 
 ---@field isRemoteChat bool|nil 
+---@field overallDungeonScore number|nil 
 local ClubMemberInfo = {}
 
 ---@class ClubMessageIdentifier

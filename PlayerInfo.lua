@@ -26,6 +26,11 @@ function C_PlayerInfo.GetContentDifficultyQuestForPlayer(questID) end
 ---@return number dungeonID
 function C_PlayerInfo.GetInstancesUnlockedAtLevel(level, isRaid) end
 
+--- Returns the players mythic+ rating summary which includes the runs they've completed as well as their current season m+ rating
+---@param playerToken string 
+---@return MythicPlusRatingSummary ratingSummary
+function C_PlayerInfo.GetPlayerMythicPlusRatingSummary(playerToken) end
+
 ---@return bool, string isEligible, failureReason
 function C_PlayerInfo.IsPlayerEligibleForNPE() end
 
@@ -37,4 +42,17 @@ function C_PlayerInfo.IsPlayerInChromieTime() end
 
 ---@return bool isRestricted
 function C_PlayerInfo.IsPlayerNPERestricted() end
+
+---@class MythicPlusRatingMapSummary
+---@field challengeModeID number 
+---@field mapScore number 
+---@field bestRunLevel number 
+---@field bestRunDurationMS number 
+---@field finishedSuccess bool 
+local MythicPlusRatingMapSummary = {}
+
+---@class MythicPlusRatingSummary
+---@field currentSeasonScore number 
+---@field runs table 
+local MythicPlusRatingSummary = {}
 

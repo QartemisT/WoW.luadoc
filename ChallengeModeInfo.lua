@@ -19,14 +19,27 @@ function C_ChallengeMode.GetActiveKeystoneInfo() end
 ---@return string, string, number name, description, filedataid
 function C_ChallengeMode.GetAffixInfo(affixID) end
 
----@return number, number, number, bool, number, bool mapChallengeModeID, level, time, onTime, keystoneUpgradeLevels, practiceRun
+---@return number, number, number, bool, number, bool, number, number, bool, bool, number, bool, ChallengeModeCompletionMemberInfo mapChallengeModeID, level, time, onTime, keystoneUpgradeLevels, practiceRun, oldOverallDungeonScore, newOverallDungeonScore, IsMapRecord, IsAffixRecord, PrimaryAffix, isEligibleForScore, members
 function C_ChallengeMode.GetCompletionInfo() end
 
 ---@return number, number numDeaths, timeLost
 function C_ChallengeMode.GetDeathCount() end
 
+--- Returns a color value from the passed in overall season M+ rating.
+---@param dungeonScore number 
+---@return table scoreColor
+function C_ChallengeMode.GetDungeonScoreRarityColor(dungeonScore) end
+
 ---@return ChallengeModeGuildTopAttempt topAttempt
 function C_ChallengeMode.GetGuildLeaders() end
+
+--- Returns a color value from the passed in keystone level.
+---@param level number 
+---@return table levelScore
+function C_ChallengeMode.GetKeystoneLevelRarityColor(level) end
+
+---@return MythicPlusRatingLinkInfo displayScores
+function C_ChallengeMode.GetMapScoreInfo() end
 
 ---@return number mapChallengeModeIDs
 function C_ChallengeMode.GetMapTable() end
@@ -35,12 +48,26 @@ function C_ChallengeMode.GetMapTable() end
 ---@return string, number, number, number|nil, number name, id, timeLimit, texture, backgroundTexture
 function C_ChallengeMode.GetMapUIInfo(mapChallengeModeID) end
 
+--- Gets the overall season mythic+ rating for the player.
+---@return number overallDungeonScore
+function C_ChallengeMode.GetOverallDungeonScore() end
+
 ---@param powerLevel number 
 ---@return number, number damageMod, healthMod
 function C_ChallengeMode.GetPowerLevelDamageHealthMod(powerLevel) end
 
 ---@return number, number, number mapChallengeModeID, affixIDs, keystoneLevel
 function C_ChallengeMode.GetSlottedKeystoneInfo() end
+
+--- Returns a color value from the passed in mythic+ rating from the combined affix scores for a specific dungeon
+---@param specificDungeonOverallScore number 
+---@return table specificDungeonOverallScoreColor
+function C_ChallengeMode.GetSpecificDungeonOverallScoreRarityColor(specificDungeonOverallScore) end
+
+--- Returns a color value from the passed in mythic+ rating for a specific dungeon.
+---@param specificDungeonScore number 
+---@return table specificDungeonScoreColor
+function C_ChallengeMode.GetSpecificDungeonScoreRarityColor(specificDungeonScore) end
 
 ---@return bool hasSlottedKeystone
 function C_ChallengeMode.HasSlottedKeystone() end
@@ -62,6 +89,11 @@ function C_ChallengeMode.SlotKeystone() end
 
 ---@return bool success
 function C_ChallengeMode.StartChallengeMode() end
+
+---@class ChallengeModeCompletionMemberInfo
+---@field memberGUID string 
+---@field name string 
+local ChallengeModeCompletionMemberInfo = {}
 
 ---@class ChallengeModeGuildAttemptMember
 ---@field name string 

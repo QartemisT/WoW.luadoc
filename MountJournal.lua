@@ -91,8 +91,16 @@ function C_MountJournal.IsMountEquipmentApplied() end
 function C_MountJournal.IsSourceChecked(filterIndex) end
 
 ---@param filterIndex number 
+---@return bool isChecked
+function C_MountJournal.IsTypeChecked(filterIndex) end
+
+---@param filterIndex number 
 ---@return bool isValid
 function C_MountJournal.IsValidSourceFilter(filterIndex) end
+
+---@param filterIndex number 
+---@return bool isValid
+function C_MountJournal.IsValidTypeFilter(filterIndex) end
 
 ---@param mountID number 
 ---@return bool needsFanfare
@@ -103,6 +111,9 @@ function C_MountJournal.Pickup(displayIndex) end
 
 ---@param isChecked bool 
 function C_MountJournal.SetAllSourceFilters(isChecked) end
+
+---@param isChecked bool 
+function C_MountJournal.SetAllTypeFilters(isChecked) end
 
 ---@param filterIndex number 
 ---@param isChecked bool 
@@ -119,8 +130,23 @@ function C_MountJournal.SetSearch(searchValue) end
 ---@param isChecked bool 
 function C_MountJournal.SetSourceFilter(filterIndex, isChecked) end
 
+---@param filterIndex number 
+---@param isChecked bool 
+function C_MountJournal.SetTypeFilter(filterIndex, isChecked) end
+
 ---@param mountID number 
 function C_MountJournal.SummonByID(mountID) end
+
+Enum.MountType = {
+	["Ground"] = 0
+	["Flying"] = 1
+	["Aquatic"] = 2
+}
+
+Enum.MountTypeFlag = {
+	["IsFlyingMount"] = 1
+	["IsAquaticMount"] = 2
+}
 
 ---@class MountCreatureDisplayInfo
 ---@field creatureDisplayID number 

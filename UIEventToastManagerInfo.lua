@@ -19,6 +19,7 @@ Enum.EventToastDisplayType = {
 	["NormalTextWithIconAndRarity"] = 5
 	["Scenario"] = 6
 	["ChallengeMode"] = 7
+	["ScenarioClickExpand"] = 8
 }
 
 Enum.EventToastEventType = {
@@ -41,6 +42,8 @@ Enum.EventToastEventType = {
 	["PlayerAuraAdded"] = 16
 	["PlayerAuraRemoved"] = 17
 	["SpellScript"] = 18
+	["CriteriaUpdated"] = 19
+	["PvPTierUpdate"] = 20
 }
 
 ---@class EventToastInfo
@@ -59,5 +62,14 @@ Enum.EventToastEventType = {
 ---@field sortOrder number 
 ---@field time number|nil 
 ---@field uiWidgetSetID number|nil 
+---@field extraUiWidgetSetID number|nil 
+---@field titleTooltip string|nil 
+---@field subtitleTooltip string|nil 
+---@field titleTooltipUiWidgetSetID number|nil 
+---@field subtitleTooltipUiWidgetSetID number|nil 
+---@field hideDefaultAtlas bool|nil 
+---@field showSoundKitID number|nil 
+---@field hideSoundKitID number|nil 
+---@field colorTint table|nil 
 local EventToastInfo = {}
 

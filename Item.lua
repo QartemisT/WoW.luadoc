@@ -37,6 +37,14 @@ function C_Item.GetBaseItemTransmogInfo(itemLoc) end
 ---@return number|nil currentItemLevel
 function C_Item.GetCurrentItemLevel(itemLocation) end
 
+---@param itemLoc table 
+---@return table|nil info
+function C_Item.GetCurrentItemTransmogInfo(itemLoc) end
+
+---@param itemLoc table 
+---@return number|nil icon
+function C_Item.GetItemConversionOutputIcon(itemLoc) end
+
 ---@param itemLocation table 
 ---@return string itemGuid
 function C_Item.GetItemGUID(itemLocation) end
@@ -81,6 +89,10 @@ function C_Item.GetItemQuality(itemLocation) end
 ---@return ItemQuality|nil itemQuality
 function C_Item.GetItemQualityByID(itemInfo) end
 
+---@param itemInfo string 
+---@return bool, string|nil, number|nil, number|nil isUnique, limitCategoryName, limitCategoryCount, limitCategoryID
+function C_Item.GetItemUniquenessByID(itemInfo) end
+
 ---@param itemLocation table 
 ---@return number stackCount
 function C_Item.GetStackCount(itemLocation) end
@@ -93,9 +105,17 @@ function C_Item.IsAnimaItemByID(itemInfo) end
 ---@return bool isBound
 function C_Item.IsBound(itemLocation) end
 
+---@param itemInfo string 
+---@return bool isDressableItem
+function C_Item.IsDressableItemByID(itemInfo) end
+
 ---@param itemLoc table 
 ---@return bool isConduit
 function C_Item.IsItemConduit(itemLoc) end
+
+---@param itemLoc table 
+---@return bool isItemConvertibleAndValidForPlayer
+function C_Item.IsItemConvertibleAndValidForPlayer(itemLoc) end
 
 ---@param itemLoc table 
 ---@return bool isCorrupted

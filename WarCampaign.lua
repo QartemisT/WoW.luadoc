@@ -51,7 +51,6 @@ Enum.CampaignState = {
 ---@field name string 
 ---@field description string 
 ---@field rewardQuestID number 
----@field orderIndex number 
 local CampaignChapterInfo = {}
 
 ---@class CampaignFailureReason

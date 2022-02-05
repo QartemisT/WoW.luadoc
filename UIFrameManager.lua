@@ -1,9 +1,9 @@
 ---@class UIFrameManager
 C_FrameManager = {}
 
-Enum.UIFrameDataSource = {
-	["WorldState"] = 0
-}
+---@param frameType UIFrameType 
+---@return bool shouldShow
+function C_FrameManager.GetFrameVisibilityState(frameType) end
 
 Enum.UIFrameType = {
 	["JailersTowerBuffs"] = 0
